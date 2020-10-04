@@ -5,3 +5,17 @@
   width: 1100px;
   display: block;
 }
+
+.aboutus h1{
+ padding: 10px;
+ text-align: center;
+}
+
+.aboutus p {
+  width: 600px
+}
+  
+.aboutus img {
+  float: right;
+  padding: 10px;
+}

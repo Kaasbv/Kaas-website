@@ -6,14 +6,30 @@
   display: block;
 }
 
-.imagecircle {
+
+.step {
   position: relative;
-  background-image: url(/images/koeien.jpg);
+  height: 350px;
+  width: 100%;
+}
+
+.imagecircle {
+  position: absolute;
   border-radius: 100%;
   width: 300px;
   height: 300px;
   background-size: cover;
   border: 20px solid green;
+}
+.step p {
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  left: 400px;
+  transform: translateY(-50%);
+  width: 40%;
+  margin: 0;
+  padding: 0;
 }
 
 .imagecircle > .imageicon{
@@ -21,12 +37,58 @@
   right: 0px;
   bottom: 0px;
   background-color: green;
-  background-image: url(/images/melkkan.png);
   border-radius: 100%;
   width: 90px;
   height: 90px;
-  background-size: 40%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
   border: 7px solid green;
+}
+
+.step:nth-child(2) .imagecircle{
+  background-image: url(/images/koeien.jpg);
+}
+
+.step:nth-child(2) .imageicon {
+  background-image: url(/images/milkbottle.png);
+}
+
+.step:nth-child(4) > .imagecircle{
+  background-image: url(/images/cheesemachine.jpg);
+  left: 230px;
+}
+
+.step:nth-child(4) p{
+  left: 620px;
+}
+
+.step:nth-child(4) .imageicon{
+  background-image: url(/images/cheese.png);
+  background-size: 60%;
+}
+
+.step:nth-child(6) > .imagecircle{
+  background-image: url(/images/packaging.jpg);
+}
+
+.step:nth-child(6) .imageicon{
+  background-image: url(/images/package.png);
+  background-size: 60%;
+}
+
+.steptransition, .step{
+  margin-bottom: 30px;
+}
+
+.steptransition {
+  position: relative;
+  height: 200px;
+  background-image: url(/images/path.png);
+  background-repeat: no-repeat;
+  background-position: 180px;
+}
+
+.steptransition:nth-child(5) {
+  background-image: url(/images/path-inverted.png);
 }

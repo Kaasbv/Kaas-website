@@ -5,3 +5,11 @@
   width: 1100px;
   display: block;
 }
+
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}

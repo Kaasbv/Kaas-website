@@ -6,6 +6,13 @@
   display: block;
 }
 
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}
 
 .step {
   position: relative;
@@ -19,7 +26,7 @@
   width: 300px;
   height: 300px;
   background-size: cover;
-  border: 20px solid green;
+  border: 20px solid var(--dark-accent);
 }
 .step p {
   position: absolute;
@@ -36,14 +43,14 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
-  background-color: green;
+  background-color: var(--dark-accent);
   border-radius: 100%;
   width: 90px;
   height: 90px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
-  border: 7px solid green;
+  border: 7px solid var(--dark-accent);
 }
 
 .step:nth-child(2) .imagecircle{

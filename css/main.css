@@ -6,3 +6,55 @@
   display: block;
 }
 
+#contact-h1 {
+  text-align: center;
+}
+
+#picture-of-cows {
+  max-width: 60%;
+  height: auto;
+}
+
+.column {
+  box-sizing: border-box;
+  border: 3px solid red; /*om de box weer te geven, natuurlijk super lelijk atm...*/
+  float: right;
+  width: 50%; 
+}
+
+.row:after { /* dit onderzoeken!!! */
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.input-text {
+  padding: 5px;
+  border-radius: 3px;  
+  border-color: #2B332E;
+  margin: 7px; 
+  /*box-shadow: 0, 0, 15px, 4px, rgba(0,0,0,0.3) shadow aan het werk krijgen*/
+}
+
+#submit { 
+  margin: 7px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #2b332e;
+  color: #F3EFE4;
+}
+  
+#submit:hover {
+  background-color: #75CC00;
+  color: #2B332E;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    margin-top: 0;
+  }
+}

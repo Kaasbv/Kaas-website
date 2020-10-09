@@ -13,3 +13,29 @@
   --dark-accent: #18871E;
   --dark-shades: #2B332E;
 }
+
+footer {
+  height: 300px;
+  background-color: #d8ebb5;
+  width: 100%;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 70px;
+}
+.footer-text-1{
+  padding-left: 415px;
+  color: black;
+  padding-bottom: 4px;
+}
+.footer-text-2{
+  padding-left: 720px;
+  color: black;
+  padding-bottom: 4px;
+}
+#footer-logo {
+  margin-left: 80px;
+  float: left;
+}
+.wrapper {
+  position: absolute;
+}

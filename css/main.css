@@ -12,14 +12,6 @@
   padding:10px;
 }
 
-.container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1100px;
-  display: block;
-}
-
 .teamColumn {
   float:left;
   width: 20%;
@@ -91,3 +83,5 @@
    --dark-accent: #18871E;
    --dark-shades: #2B332E;
  }
+
+ 

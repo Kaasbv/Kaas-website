@@ -25,6 +25,11 @@
   font-family: Arial;
 }
 
+.card img {
+  object-fit: cover;
+  height: 300px;
+}
+
 .price {
   color: var(--dark-shades);
   font-size: 22px;

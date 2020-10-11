@@ -6,7 +6,14 @@
   display: block;
 }
 
-#contact-h1 {
+/*@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    margin-top: 0;
+  }
+}*/
+
+.text-center {
   text-align: center;
 }
 
@@ -17,26 +24,22 @@
 
 .column {
   box-sizing: border-box;
-  border: 3px solid red; /*om de box weer te geven, natuurlijk super lelijk atm...*/
   float: right;
   width: 50%; 
 }
 
-.row:after { /* dit onderzoeken!!! */
-  content: "";
-  display: table;
-  clear: both; 
-}
-
-.input-text {
+form > input, textarea {
   padding: 5px;
   border-radius: 3px;  
   border-color: #2B332E;
-  margin: 7px; 
-  /*box-shadow: 0, 0, 15px, 4px, rgba(0,0,0,0.3) shadow aan het werk krijgen*/
+  margin: 7px;
+} /*eventueel randen weghalen en box shadow gebruiken*/
+
+form > label {
+  margin: 7px;
 }
 
-#submit { 
+form > input[type="submit"] { 
   margin: 7px;
   width: 100px;
   height: 50px;
@@ -46,15 +49,8 @@
   color: #F3EFE4;
 }
   
-#submit:hover {
+form > input[type="submit"]:hover {
   background-color: #75CC00;
   color: #2B332E;
   cursor: pointer;
-}
-
-@media screen and (max-width: 900px) {
-  .column {
-    width: 100%;
-    margin-top: 0;
-  }
 }

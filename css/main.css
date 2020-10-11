@@ -5,3 +5,49 @@
   width: 1100px;
   display: block;
 }
+
+.teamColumn {
+  float:left;
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;  
+}
+
+.teamTitle {
+  color: grey;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 5px;
+}
+.teamContainer{
+  padding: 10px;
+  text-align: center;
+}
+
+.teamContainer > * {
+  margin-bottom :15px;
+  margin-top: 15px;
+}
+#theTeam h2 {
+  text-align: center;
+  width: 950px;
+}
+
+.teamButton {
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: green;
+  text-decoration: none;
+}
+
+.teamButton:hover {
+  background-color: black;
+}
+

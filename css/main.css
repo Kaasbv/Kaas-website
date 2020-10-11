@@ -26,6 +26,7 @@
   box-sizing: border-box;
   float: right;
   width: 50%; 
+  background-color: red;
 }
 
 form > input, textarea {

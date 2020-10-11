@@ -28,14 +28,6 @@ nav {
   display: block;
 } 
 
-.navbarbrand {
-  display: block;
-  margin-top: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5%;
-}
-
 nav > ul {
   top: 0px;
   margin-top: 0px;
@@ -44,7 +36,7 @@ nav > ul {
   padding: 0px;
   list-style-type: none;
   overflow: hidden;
-  background-color: #2B332E;
+  background-color: transparent;
 }
 
 nav > ul > li {
@@ -53,7 +45,7 @@ nav > ul > li {
 
 nav > ul > li > a {
   display: block;
-  color: #DF9F0A;
+  color: var(--dark-shades);
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
@@ -66,11 +58,6 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
   background-color: #F3EFE4;
   padding-bottom: 20px; 
-}
-
-.active {
-  background-color: #18871E;
-  padding-bottom: 20px;
 }
 
 .container {

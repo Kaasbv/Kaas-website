@@ -1,3 +1,9 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   position: relative;
   margin-left: auto;
@@ -13,3 +19,37 @@
   --dark-accent: #18871E;
   --dark-shades: #2B332E;
 }
+
+footer {
+  height: 300px;
+  background: linear-gradient(180deg, #F3EFE4 0%, #75CC00 100%);
+  width: 100%;
+  position: relative;
+  padding-left: 0;
+  padding-top: 70px;
+}
+.footer-text-1 {
+  padding-left: 450px;
+  color: black;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+.footer-text-2 {
+  padding-left: 720px;
+  color: black;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+#footer-logo {
+  margin-left: 120px;
+  float: left;
+}
+.wrapper {
+  position: absolute;
+}
+
+#copy {
+  text-align: center;
+  padding-top: 270px;
+  }
+  

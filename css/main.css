@@ -16,7 +16,7 @@
 
 .card {
   float: left;
-  margin-right: 20px;
+  margin: 30px;
   position: relative; 
   box-shadow: 0 4px 8px 0 var(--dark-shades);
   max-width: 300px;

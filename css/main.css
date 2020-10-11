@@ -26,3 +26,23 @@
   --dark-accent: #18871E;
   --dark-shades: #2B332E;
 }
+
+.shoppingcart p {
+  width: 100%;
+  text-align: center;
+}
+
+.shoppingcart button {
+  float: right;
+  font-size: 15px;
+  background-color: var(--light-accent);
+  color: var(--light-shades);
+  border: 1px solid var(--dark-shades);
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.shoppingcart button:hover {
+  background-color: var(--dark-accent);
+  color: var(--light-accent);
+}

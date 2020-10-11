@@ -6,6 +6,12 @@
   display: block;
 }
 
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
 .teamColumn {
   float:left;
   width: 20%;
@@ -16,7 +22,7 @@
 .teamTitle {
   color: grey;
 }
-.card {
+.teamCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 5px;
@@ -29,10 +35,6 @@
 .teamContainer > * {
   margin-bottom :15px;
   margin-top: 15px;
-}
-#theTeam h2 {
-  text-align: center;
-  width: 950px;
 }
 
 .teamButton {
@@ -51,3 +53,30 @@
   background-color: black;
 }
 
+/************** About us pagina **********/
+
+.aboutus h1{
+  padding: 10px;
+  text-align: center;
+ }
+ 
+ .aboutus p {
+   width: 600px
+ }
+   
+ .aboutus img {
+   float: right;
+ }
+
+ .aboutus {
+   margin-bottom: 100px;
+   padding: 10px;
+ }
+ 
+ :root {
+   --light-shades: #F3EFE4;
+   --light-accent: #75CC00;
+   --main-brand: #DF9F0A;
+   --dark-accent: #18871E;
+   --dark-shades: #2B332E;
+ }

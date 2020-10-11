@@ -6,12 +6,23 @@
   display: block;
 }
 
-/*@media screen and (max-width: 900px) {
-  .column {
-    width: 100%;
-    margin-top: 0;
-  }
-}*/
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}
+
+.background {
+  box-sizing: border-box;
+  border: 5px solid var(--dark-accent);
+  border-radius: 5px;
+  width: 1100px;
+  height: 600px;
+  display: block;
+  background-color: var(--main-brand) 
+}
 
 .text-center {
   text-align: center;
@@ -20,6 +31,7 @@
 #picture-of-cows {
   max-width: 60%;
   height: auto;
+  border-radius: 5px;
 }
 
 .column {
@@ -32,7 +44,7 @@
 form > input, textarea {
   padding: 5px;
   border-radius: 3px;  
-  border-color: #2B332E;
+  border-color: var(--dark-shades);
   margin: 7px;
 } /*eventueel randen weghalen en box shadow gebruiken*/
 
@@ -46,12 +58,12 @@ form > input[type="submit"] {
   height: 50px;
   border-radius: 5px;
   border: 0px;
-  background-color: #2b332e;
-  color: #F3EFE4;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
 }
   
 form > input[type="submit"]:hover {
-  background-color: #75CC00;
-  color: #2B332E;
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
   cursor: pointer;
 }

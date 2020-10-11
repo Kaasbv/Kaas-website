@@ -4,6 +4,7 @@
   margin-right: auto;
   width: 1100px;
   display: block;
+  text-align: center;
 }
 
 :root {
@@ -12,4 +13,39 @@
   --main-brand: #DF9F0A;
   --dark-accent: #18871E;
   --dark-shades: #2B332E;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 var(--dark-shades);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: var(--dark-shades);
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: var(--light-shades);
+  background-color: var(--dark-accent);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }

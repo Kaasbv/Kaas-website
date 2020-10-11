@@ -1,5 +1,10 @@
 html {
   scroll-behavior: smooth;
+  margin: 0pt;
+ }
+
+ body{
+   margin: 0pt;
  }
 
  .scrollbutton {
@@ -7,10 +12,6 @@ html {
   vertical-align: bottom;
  }
  
- #down {
-  margin-top: 100%;
- } 
-
 :root {
   --light-shades: #F3EFE4;
   --light-accent: #75CC00;
@@ -19,26 +20,38 @@ html {
   --dark-shades: #2B332E;
 }
 
-ul {
-  position: sticky;
-  top: 0px;
-  margin-top: -8px;
+nav {
+  position: fixed;
+  width: 100vw;
+  margin-top: 0pt;
+  height: auto;
+  display: block;
+} 
+
+.navbarbrand {
+  display: block;
+  margin-top: 3px;
   margin-left: auto;
   margin-right: auto;
+  width: 5%;
+}
+
+nav > ul {
+  top: 0px;
+  margin-top: 0px;
   margin-bottom: 0px;
   height: 6vh;
-  width: 1100px;
   padding: 0px;
   list-style-type: none;
   overflow: hidden;
   background-color: #2B332E;
 }
 
-li {
+nav > ul > li {
   float: left;
 }
 
-li a {
+nav > ul > li > a {
   display: block;
   color: #DF9F0A;
   font-weight: bold;
@@ -50,8 +63,7 @@ li a {
   text-decoration: none;
 }
 
-
-li a:hover {
+nav > ul > li > a:hover {
   background-color: #F3EFE4;
   padding-bottom: 20px; 
 }
@@ -59,13 +71,6 @@ li a:hover {
 .active {
   background-color: #18871E;
   padding-bottom: 20px;
-}
-
-.brand {
-  display: block;
-  padding-top: 2px;
-  margin-left: 100px;
-  margin-right: auto;
 }
 
 .container {
@@ -77,9 +82,39 @@ li a:hover {
   display: block;
 } 
 
+.containernavbar {
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  width: 100vw;
+  height: 6vh;
+  display: block;
+} 
+
+.containerhome {
+  position: static;
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  border-top: 1vh;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.scrollbutton {
+  position: relative;
+  top: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #Home {
   background-image: url(/images/landing.jpg);
-  background-size: cover;
+  background-size: 100vw;
   height: 100vh;
 }
 
@@ -87,10 +122,4 @@ li a:hover {
   background-image: url(/images/ourcheese.jpg);
   background-size: cover;
   height: 100vh;
-}
-
-h1 {
-  padding: 6%;
-  color: #2B332E;
-  margin  : 0px;
 }

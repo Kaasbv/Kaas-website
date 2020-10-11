@@ -16,11 +16,12 @@
 
 .card {
   float: left;
-  margin: 30px;
+  margin: 20px;
   position: relative; 
   box-shadow: 0 4px 8px 0 var(--dark-shades);
   max-width: 300px;
   text-align: center;
+  padding: 10px;
   font-family: arial;
 }
 

@@ -20,8 +20,6 @@
   display: block;
 }
 
-/************** Meet the Team **********/
-
 .teamColumn {
   float:left;
   width: 20%;
@@ -35,7 +33,10 @@
 .teamCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   text-align: center;
-  padding: 5px;
+  padding: 10px; 
+}
+.teamCard img {
+  width: 100%;
 }
 .teamContainer{
   padding: 10px;

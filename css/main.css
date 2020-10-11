@@ -6,6 +6,19 @@
   display: block;
 }
 
+.aboutus h1{
+ padding: 10px;
+ text-align: center;
+}
+
+.aboutus p {
+  width: 600px
+}
+  
+.aboutus img {
+  float: right;
+}
+
 :root {
   --light-shades: #F3EFE4;
   --light-accent: #75CC00;

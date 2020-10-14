@@ -12,20 +12,17 @@
   padding:10px;
 }
 
-.teamColumn {
-  float:left;
-  width: 20%;
-  padding: 10px;
-  margin-bottom: 10px;  
-}
-
 .teamTitle {
   color: grey;
 }
 .teamCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
 }
 .teamCard img {
   width: 100%;
@@ -36,11 +33,11 @@
 }
 
 .teamContainer > * {
-  margin-bottom :15px;
+  margin-bottom :5px;
   margin-top: 15px;
 }
 
-.teamButton {
+.teamContainer button {
   border: none;
   padding: 8px;
   color: white;
@@ -76,6 +73,8 @@
    padding: 10px;
  }
  
+/********** ROOT ********/
+
  :root {
    --light-shades: #F3EFE4;
    --light-accent: #75CC00;

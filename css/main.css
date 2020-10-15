@@ -12,6 +12,10 @@
   padding:10px;
 }
 
+#theTeam div {
+  overflow: hidden;
+}
+
 .teamTitle {
   color: grey;
 }

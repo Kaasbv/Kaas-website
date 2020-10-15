@@ -6,23 +6,81 @@
   display: block;
 }
 
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
+.teamTitle {
+  color: grey;
+}
+.teamCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
+}
+.teamCard img {
+  width: 100%;
+}
+.teamContainer{
+  padding: 10px;
+  text-align: center;
+}
+
+.teamContainer > * {
+  margin-bottom :5px;
+  margin-top: 15px;
+}
+
+.teamContainer button {
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: green;
+  text-decoration: none;
+}
+
+.teamButton:hover {
+  background-color: black;
+}
+
+/************** About us pagina **********/
+
 .aboutus h1{
- padding: 10px;
- text-align: center;
-}
+  padding: 10px;
+  text-align: center;
+ }
+ 
+ .aboutus p {
+   width: 600px
+ }
+   
+ .aboutus img {
+   float: right;
+ }
 
-.aboutus p {
-  width: 600px
-}
-  
-.aboutus img {
-  float: right;
-}
+ .aboutus {
+   margin-bottom: 100px;
+   padding: 10px;
+ }
+ 
+/********** ROOT ********/
 
-:root {
-  --light-shades: #F3EFE4;
-  --light-accent: #75CC00;
-  --main-brand: #DF9F0A;
-  --dark-accent: #18871E;
-  --dark-shades: #2B332E;
-}
+ :root {
+   --light-shades: #F3EFE4;
+   --light-accent: #75CC00;
+   --main-brand: #DF9F0A;
+   --dark-accent: #18871E;
+   --dark-shades: #2B332E;
+ }
+
+ 

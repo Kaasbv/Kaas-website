@@ -31,14 +31,40 @@ body {
   text-align: center;
 }
 
-#picture-of-cows {
-  max-width: 60%;
-  height: auto;
-  border-radius: 5px;
+.zoom
+{
+    position:relative;
+    width:100px;
+    height:80px;
+    left:0px;
+    top:0px;
+    border:none;
+    border-radius: 3px;
+    transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
 }
-/*
-- mogelijk meerdere foto's en dan zoom on hover?
-*/
+
+.zoom:hover
+{
+    width:200px;
+    height:170px;
+    left:-25px;
+    top:-25px;
+    z-index:9999;
+}
+
+.ZoomIn ul
+{
+clear:both;
+}
+.ZoomIn li
+{
+width:102px;
+height:82px;
+margin:4px;
+float: left;
+overflow:visible;
+display: block;
+}
 
 .column {
   box-sizing: border-box;

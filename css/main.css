@@ -28,28 +28,34 @@ footer {
   padding-left: 0;
   padding-top: 70px;
 }
-.footer-text-1 {
+
+#footer-logo {
+  margin-left: 120px;
+  float: left;
+}
+.wrapper1 {
+  position: absolute;
+}
+
+.wrapper2 {
+  position: absolute;
+}
+
+.wrapper1 > div {  
   padding-left: 450px;
   color: black;
   padding-bottom: 4px;
   font-weight: bold;
 }
-.footer-text-2 {
+
+.wrapper2 > div {
   padding-left: 720px;
   color: black;
   padding-bottom: 4px;
   font-weight: bold;
 }
-#footer-logo {
-  margin-left: 120px;
-  float: left;
-}
-.wrapper {
-  position: absolute;
-}
 
 #copy {
   text-align: center;
   padding-top: 270px;
-  }
-  
+}

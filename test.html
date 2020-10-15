@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kaas website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/scripts/cartSimple.js"></script>
+    <script>
+      setInterval(() => {
+        document.querySelector(".container").innerHTML = renderCart();
+      }, 500)
+    </script>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

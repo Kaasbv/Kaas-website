@@ -22,7 +22,8 @@ body {
 
 footer {
   height: 300px;
-  background: linear-gradient(180deg, #F3EFE4 0%, #75CC00 100%);
+  background-image: url(/images/gras.jpg);
+  background-size: 100%;
   width: 100%;
   position: relative;
   padding-left: 0;
@@ -32,16 +33,12 @@ footer {
 #footer-logo {
   margin-left: 120px;
   float: left;
+  filter: invert(1);
 }
+
 .wrapper1 {
   position: absolute;
   margin-left: 450px;
-  float: left;
-}
-
-.wrapper2 {
-  position: absolute;
-  margin-left: 720px;
   float: left;
 }
 
@@ -52,25 +49,56 @@ footer {
 }
 
 .wrapper1 > a, .wrapper1 > a:link, .wrapper1 > a:visited {  
-  color: black;
+  color: white;
   text-decoration: none;
   padding-bottom: 4px;
   font-weight: bold;
   display: block;
-}
-
-.wrapper1 > a:hover {
-  color: white;
   text-shadow: 1px 1px black;
 }
 
-.wrapper2 > div {
+.wrapper1 > a:hover {
   color: black;
+  text-shadow: 1px 1px white;
+}
+
+.wrapper2 {
+  position: absolute;
+  margin-left: 720px;
+  float: left;
+}
+
+.wrapper2 > div {
+  color: white;
   padding-bottom: 4px;
   font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+.wrapper3 {
+  position: absolute;
+  margin-left: 1300px;
+  float: left;
+}
+
+.wrapper3 > div {
+  color: white;
+  padding-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+#emailinput {
+  margin-bottom: 8px;
+}
+
+#newsletter {
+  display: block;
 }
 
 #copy {
+  color: white;
   text-align: center;
   padding-top: 270px;
+  text-shadow: 1px 1px black;
 }

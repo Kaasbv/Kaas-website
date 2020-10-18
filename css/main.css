@@ -288,9 +288,21 @@ nav > ul > li > a:hover {
   --dark-shades: #2B332E;
 }
 
+footer::before {
+  background-image: url(/images/gras.jpg);
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  content: '';
+  top: 0px;
+  padding-left: 0;
+  padding-top: 70px;
+  filter: brightness(90%);
+  background-size: 100%;
+}
+
 footer {
   height: 300px;
-  background-image: url(/images/gras.jpg);
   background-size: 100%;
   width: 100%;
   position: relative;

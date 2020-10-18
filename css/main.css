@@ -167,6 +167,30 @@
   margin-bottom: 100px;
   padding: 10px;
 }
+
+/********** FAQ *********/
+
+.faq {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.faqCollapse {
+background-color: grey;
+color: black;
+cursor: pointer;
+padding: 10px;
+text-align: left;
+width: 50%;
+}
+
+.active, .faqCollapse:hover {
+  background-color: cornsilk;
+}
+.faqContent {
+  display: none;
+}
+
 /********** ROOT ********/
 
 :root {

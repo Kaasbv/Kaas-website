@@ -12,26 +12,13 @@
         <div id="footer-logo"><a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" style="width: 210px; padding: 5px; padding-left: 30px; padding-right: 30px;"></a>
             </div>
         <div class="wrapper1">
-            <div>
-                Home
-            </div>
-            <div>
-                Our Cheese
-            </div>
-            <div>
-                How it's Made
-            </div>
-            <div>
-                 About Us
-            </div>
-            <div>
-                Shop
-            </div>
-            <div>
-                Profile
-            </div>
-            <div>
-                FAQ
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Our Cheese</a>
+                <a href="./index.html">How it's Made</a>
+                <a href="./index.html">About Us</a>
+                <a href="./index.html">Shop</a>
+                <a href="./index.html">Profile</a>
+                <a href="./index.html">FAQ</a>
             </div>  
         </div>
         <div class="wrapper2">
@@ -48,9 +35,22 @@
                 TheBeilerCheese@gmail.com
             </div>
         </div>
+        <div class="wrapper3">
+            <div>
+                Newsletter: 
+            </div>
+            <input type="email" placeholder="Your email adress" id="emailinput">
+            <button id="newsletter" onclick="mailFunction()">Sign me up please!</button>
+        </div>
         
-        <div id="copy">©TheBeilerCaseus</div>
+        <div id="copy">©TheBeilerCheese</div>
 </footer>
 <link rel="stylesheet" href="./css/main.css">
 </div>
 </html>
+
+<script>
+    function mailFunction() {
+      alert("You signed up for the newsletter");
+    }
+    </script>

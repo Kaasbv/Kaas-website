@@ -5,6 +5,7 @@ html {
 
  body{
    margin: 0pt;
+   overflow-x: hidden;
  }
 
  .scrollbutton {

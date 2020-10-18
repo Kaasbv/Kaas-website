@@ -163,20 +163,9 @@ function addToCart(productId, variantId){
   }
 }
 
-function renderCart(){
-  let html = "<table><tbody>"
-  for(let cartItem of cart){
-    html += "<tr>"
-    for(let value of Object.values(cartItem)){
-      if(typeof value !== "object" && typeof value !== "array"){
-        html += "<td>" + value + "</td>";
-      }
-    }
-    html += "</tr>"
-  }
-  html += "</tbody><table>";
-
-  return html;
+function clearCart(){
+  cart = [];
+  saveCart();
 }
 
 function removeFromCart(productId, variantId){

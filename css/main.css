@@ -116,29 +116,7 @@ nav > ul > li > a:hover {
 }
 /************** Meet the Team **********/
 
-#theTeam {
-  padding:10px;
-}
-
-#theTeam div {
-  overflow: hidden;
-}
-
-.teamTitle {
-  color: grey;
-}
-.teamCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-  text-align: center;
-  padding: 10px; 
-  float:left;
-  width: 20%; 
-  margin-bottom: 15px;
-  margin-right: 10px; 
-}
-.teamCard img {
-  width: 100%;
-}
+/************** How it's made **********/
 
 .step {
   position: relative;
@@ -226,6 +204,33 @@ nav > ul > li > a:hover {
 .steptransition:nth-child(5) {
   background-image: url(/images/path-inverted.png);
 }
+
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
+#theTeam div {
+  overflow: hidden;
+}
+
+.teamTitle {
+  color: grey;
+}
+.teamCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
+}
+.teamCard img {
+  width: 100%;
+}
+
 .teamContainer{
   padding: 10px;
   text-align: center;

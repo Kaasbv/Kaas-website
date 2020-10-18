@@ -114,3 +114,169 @@ nav > ul > li > a:hover {
 #logo {
   margin: 6px;
 }
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
+#theTeam div {
+  overflow: hidden;
+}
+
+.teamTitle {
+  color: grey;
+}
+.teamCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
+}
+.teamCard img {
+  width: 100%;
+}
+
+.step {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.imagecircle {
+  position: absolute;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border: 20px solid var(--dark-accent);
+}
+
+.step aside {
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  left: 400px;
+  transform: translateY(-50%);
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagecircle > .imageicon{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--dark-accent);
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 7px solid var(--dark-accent);
+}
+
+.step:nth-child(2) .imagecircle{
+  background-image: url(/images/koeien.jpg);
+}
+
+.step:nth-child(2) .imageicon {
+  background-image: url(/images/milkbottle.png);
+}
+
+.step:nth-child(4) > .imagecircle{
+  background-image: url(/images/cheesemachine.jpg);
+  left: 230px;
+}
+
+.step:nth-child(4) aside{
+  left: 620px;
+}
+
+.step:nth-child(4) .imageicon{
+  background-image: url(/images/cheese.png);
+  background-size: 60%;
+}
+
+.step:nth-child(6) > .imagecircle{
+  background-image: url(/images/packaging.jpg);
+}
+
+.step:nth-child(6) .imageicon{
+  background-image: url(/images/package.png);
+  background-size: 60%;
+}
+
+.steptransition, .step{
+  margin-bottom: 30px;
+}
+
+.steptransition {
+  position: relative;
+  height: 200px;
+  background-image: url(/images/path.png);
+  background-repeat: no-repeat;
+  background-position: 180px;
+}
+
+.steptransition:nth-child(5) {
+  background-image: url(/images/path-inverted.png);
+}
+.teamContainer{
+  padding: 10px;
+  text-align: center;
+}
+
+.teamContainer > * {
+  margin-bottom :5px;
+  margin-top: 15px;
+}
+
+.teamContainer button {
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: green;
+  text-decoration: none;
+}
+
+.teamButton:hover {
+  background-color: black;
+}
+
+/************** About us pagina **********/
+
+.aboutus h1{
+  padding: 10px;
+  text-align: center;
+}
+
+.aboutus p {
+  width: 600px
+}
+  
+.aboutus img {
+  float: right;
+}
+
+.aboutus {
+  margin-bottom: 100px;
+  padding: 10px;
+}
+/********** ROOT ********/
+
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}

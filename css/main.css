@@ -14,10 +14,6 @@
   --dark-shades: #2B332E;
 }
 
-body {
-  font-family: "Comic Sans MS";
-}
-
 .background {
   box-sizing: border-box;
   border-radius: 5px;
@@ -33,23 +29,23 @@ body {
 
 .zoom
 {
-    position:relative;
-    width:100px;
-    height:80px;
-    left:0px;
-    top:0px;
-    border:none;
-    border-radius: 3px;
-    transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+  position: relative;
+  width: 100px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s ease;
 }
 
 .zoom:hover
 {
-    width:200px;
-    height:170px;
-    left:-25px;
-    top:-25px;
-    z-index:9999;
+  width: 200px;
+  height: 170px;
+  left: -25px;
+  top: -25px;
+  z-index: 1;
 }
 
 .ZoomIn ul
@@ -58,12 +54,12 @@ clear:both;
 }
 .ZoomIn li
 {
-width:102px;
-height:82px;
-margin:4px;
-float: left;
-overflow:visible;
-display: block;
+  width: 102px;
+  height: 82px;
+  margin: 4px;
+  float: left;
+  overflow: visible;
+  display: block;
 }
 
 .column {
@@ -71,6 +67,16 @@ display: block;
   float: right;
   width: 50%; 
   height: 100%;
+}
+
+form > input:hover, form > textarea:hover {
+  border: var(--dark-shades) 1px solid;
+}
+
+form > input:focus, form > textarea:focus {
+  outline: none;
+  color: var(--light-shades);
+  background-color: var(--dark-shades) ;
 }
 
 form > input {
@@ -84,10 +90,7 @@ form > input, textarea {
   box-shadow: #2B332E;
   margin: 7px;
   box-shadow: 5px 5px 5px rgba(43,51,46,0.3); 
-  font-family: "Comic Sans MS";
-} /*
-  -input velden controleren via Javascript (email required)
-  */
+}
 
 form > label {
   margin: 7px;
@@ -104,10 +107,6 @@ form > input[type="submit"] {
   color: var(--light-shades);
   box-shadow: none;
 }
-/*
--Checkbox maken dat mensen akkoord gaan met vastleggen van gegevens
--Captcha maken (tegen bots) 
-*/
   
 form > input[type="submit"]:hover {
   background-color: var(--light-accent);

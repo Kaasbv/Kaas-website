@@ -7,16 +7,14 @@ function initfaq(){
     }
 }
 
-function toggleFaq(){
-    var clickedButton = event.targetElement;
+function toggleFaq(event){
+    var clickedButton = event.target;
     var section = clickedButton.nextElementSibling;
-
     clickedButton.classList.toggle("active");
-
+    
     if (section.style.display === "block") {
-        section.style.display === "hidden"
-    }
-    else {
-        section.style.display === "hidden"
+        section.style.display = "none";
+    } else {
+        section.style.display = "block";
     }
 }

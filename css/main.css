@@ -1,16 +1,284 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  margin: 0pt;
+ }
+
+ .scrollbutton {
+  text-align: center;
+  vertical-align: bottom;
+ }
+ 
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  margin-top: 0pt;
+  height: auto;
+  display: block;
+} 
+
+nav > ul {
+  top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 6vh;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li > a {
+  display: block;
+  color: var(--dark-shades);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  background-color: #F3EFE4;
+  padding-bottom: 20px; 
+}
+
 .container {
-  position: relative;
+  position: static;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
+  height: auto;
+  display: block;
+} 
+
+.containernavbar {
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  width: 100vw;
+  height: 6vh;
+  display: block;
+} 
+
+.containerhome {
+  position: static;
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  border-top: 1vh;
+  width: 100vw;
+  height: 100vh;
   display: block;
 }
+
+.scrollbutton {
+  position: relative;
+  top: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Home {
+  background-image: url(/images/landing.jpg);
+  background-size: 100vw;
+  height: 100vh;
+}
+
+#Our-Cheese {
+  background-image: url(/images/ourcheese.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#logo {
+  margin: 6px;
+}
+/************** Meet the Team **********/
+
+/************** How it's made **********/
+
+.step {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.imagecircle {
+  position: absolute;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border: 20px solid var(--dark-accent);
+}
+
+.step aside {
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  left: 400px;
+  transform: translateY(-50%);
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagecircle > .imageicon{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--dark-accent);
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 7px solid var(--dark-accent);
+}
+
+.step:nth-child(2) .imagecircle{
+  background-image: url(/images/koeien.jpg);
+}
+
+.step:nth-child(2) .imageicon {
+  background-image: url(/images/milkbottle.png);
+}
+
+.step:nth-child(4) > .imagecircle{
+  background-image: url(/images/cheesemachine.jpg);
+  left: 230px;
+}
+
+.step:nth-child(4) aside{
+  left: 620px;
+}
+
+.step:nth-child(4) .imageicon{
+  background-image: url(/images/cheese.png);
+  background-size: 60%;
+}
+
+.step:nth-child(6) > .imagecircle{
+  background-image: url(/images/packaging.jpg);
+}
+
+.step:nth-child(6) .imageicon{
+  background-image: url(/images/package.png);
+  background-size: 60%;
+}
+
+.steptransition, .step{
+  margin-bottom: 30px;
+}
+
+.steptransition {
+  position: relative;
+  height: 200px;
+  background-image: url(/images/path.png);
+  background-repeat: no-repeat;
+  background-position: 180px;
+}
+
+.steptransition:nth-child(5) {
+  background-image: url(/images/path-inverted.png);
+}
+
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
+#theTeam div {
+  overflow: hidden;
+}
+
+.teamTitle {
+  color: grey;
+}
+.teamCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
+}
+.teamCard img {
+  width: 100%;
+}
+
+.teamContainer{
+  padding: 10px;
+  text-align: center;
+}
+
+.teamContainer > * {
+  margin-bottom :5px;
+  margin-top: 15px;
+}
+
+.teamContainer button {
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: green;
+  text-decoration: none;
+}
+
+.teamButton:hover {
+  background-color: black;
+}
+
+/************** About us pagina **********/
+
+.aboutus h1{
+  padding: 10px;
+  text-align: center;
+}
+
+.aboutus p {
+  width: 600px
+}
+  
+.aboutus img {
+  float: right;
+}
+
+.aboutus {
+  margin-bottom: 100px;
+  padding: 10px;
+}
+/********** ROOT ********/
 
 :root {
   --light-shades: #F3EFE4;

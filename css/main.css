@@ -1,11 +1,120 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0pt;
+ }
+
+ body{
+   margin: 0pt;
+ }
+
+ .scrollbutton {
+  text-align: center;
+  vertical-align: bottom;
+ }
+ 
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  margin-top: 0pt;
+  height: auto;
+  display: block;
+} 
+
+nav > ul {
+  top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 6vh;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li > a {
+  display: block;
+  color: var(--dark-shades);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  background-color: #F3EFE4;
+  padding-bottom: 20px; 
+}
+
 .container {
-  position: relative;
+  position: static;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
+  height: auto;
+  display: block;
+} 
+
+.containernavbar {
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  width: 100vw;
+  height: 6vh;
+  display: block;
+} 
+
+.containerhome {
+  position: static;
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  border-top: 1vh;
+  width: 100vw;
+  height: 100vh;
   display: block;
 }
 
+.scrollbutton {
+  position: relative;
+  top: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Home {
+  background-image: url(/images/landing.jpg);
+  background-size: 100vw;
+  height: 100vh;
+}
+
+#Our-Cheese {
+  background-image: url(/images/ourcheese.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#logo {
+  margin: 6px;
+}
+/************** Meet the Team **********/
 
 /************** How it's made **********/
 

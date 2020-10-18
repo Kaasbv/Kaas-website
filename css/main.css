@@ -35,21 +35,31 @@ footer {
 }
 .wrapper1 {
   position: absolute;
+  margin-left: 450px;
+  float: left;
 }
 
 .wrapper2 {
   position: absolute;
+  margin-left: 720px;
+  float: left;
 }
 
 .wrapper1 > div {  
-  padding-left: 450px;
   color: black;
   padding-bottom: 4px;
   font-weight: bold;
 }
 
+.wrapper1 > a, .wrapper1 > a:link, .wrapper1 > a:visited {  
+  color: black;
+  text-decoration: none;
+  padding-bottom: 4px;
+  font-weight: bold;
+  display: block;
+}
+
 .wrapper2 > div {
-  padding-left: 720px;
   color: black;
   padding-bottom: 4px;
   font-weight: bold;

@@ -110,3 +110,7 @@ nav > ul > li > a:hover {
   background-size: cover;
   height: 100vh;
 }
+
+#logo {
+  margin: 6px;
+}

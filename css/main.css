@@ -59,6 +59,11 @@ footer {
   display: block;
 }
 
+.wrapper1 > a:hover {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
 .wrapper2 > div {
   color: black;
   padding-bottom: 4px;

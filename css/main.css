@@ -12,6 +12,16 @@
 }
 
 /************** Our Cheese **************/
+#our_cheese--left{
+  width: 50%;
+  float: left;
+}
+
+#our_cheese--right{
+  width: 50%;
+  float: right;
+}
+
 #our_cheese--cheese{
   position: relative;
   border: 0px;

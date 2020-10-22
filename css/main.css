@@ -34,6 +34,10 @@ html {
   color: var(--dark-shades);
 }
 
+textarea {
+  resize: none;
+}
+
 nav {
   position: fixed;
   width: 100vw;

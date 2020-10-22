@@ -21,9 +21,14 @@
   position: relative; 
   box-shadow: 0 4px 8px 0 var(--dark-shades);
   max-width: 300px;
-  text-align: center;
+   text-align: center;
   padding: 20px;
   font-family: Arial;
+}
+
+.title {
+height: 175px;
+
 }
 
 .card img {

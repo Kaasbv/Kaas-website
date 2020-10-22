@@ -6,6 +6,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background: var(--dark-shades);
+  color: var(--light-shades)
 }
 
 html {
@@ -21,17 +23,32 @@ html {
 :root {
   --light-shades: #F3EFE4;
   --light-accent: #75CC00;
-  --main-brand: #DF9F0A;
-  --dark-accent: #18871E;
-  --dark-shades: #2B332E;
+  --main-brand: #df9f0a;
+  --dark-accent: #18871e;
+  --dark-accent-opacity: #18871ecc;
+  --dark-shades: #2b332e;
+}
+
+.shrinked-menu {
+  background: var(--dark-accent-opacity);
+}
+
+.shrinked-menu a {
+  color: var(--dark-shades);
+}
+
+textarea {
+  resize: none;
 }
 
 nav {
   position: fixed;
   width: 100vw;
-  margin-top: 0pt;
-  height: auto;
+  margin-top: 0px;
+  height: 6vh;
   display: block;
+  transition: background 0.5s;
+  z-index: 2000;
 } 
 
 nav > ul {
@@ -41,7 +58,6 @@ nav > ul {
   height: 6vh;
   padding: 0px;
   list-style-type: none;
-  overflow: hidden;
   background-color: transparent;
 }
 
@@ -67,7 +83,7 @@ nav > ul > li > a:hover {
 }
 
 .container {
-  position: static;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
@@ -83,7 +99,28 @@ nav > ul > li > a:hover {
   width: 100vw;
   height: 6vh;
   display: block;
-} 
+}
+
+.container:nth-child(4)::before {
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+}
+.container:nth-child(4) {
+  padding-top: 20px;
+  color: var(--dark-shades);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  top: 0px;
+  left: calc(((100vw - 1100px) / 2) * -1);
+}
 
 .containerhome {
   position: static;
@@ -171,7 +208,8 @@ nav > ul > li > a:hover {
 
 #Home {
   background-image: url(/images/landing.jpg);
-  background-size: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -343,6 +381,7 @@ nav > ul > li > a:hover {
 }
 
 .aboutus {
+  overflow: hidden;
   margin-bottom: 100px;
   padding: 10px;
 }

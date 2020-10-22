@@ -9,6 +9,7 @@
   margin-right: auto;
   width: 1100px;
   display: block;
+  overflow: hidden;
 }
 
 /************** Our Cheese **************/
@@ -26,47 +27,39 @@
   position: relative;
   border: 0px;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  margin: 50px;
+  height: 400px;
+  width: 400px;
   background-color: grey;
   overflow: hidden;
 }
 
-.our_cheese--cheese--part:nth-child(1){
+.our_cheese--cheese--part{
   position: absolute;
   border: 0px;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.our_cheese--cheese--part:nth-child(1){
   background-color: white;
   top: 0px;
   left: 0px;
 }
 
 .our_cheese--cheese--part:nth-child(2){
-  position: absolute;
-  border: 0px;
-  height: 100px;
-  width: 100px;
   background-color: white;
   top: 0px;
   right: 0px;
 }
 
 .our_cheese--cheese--part:nth-child(3){
-  position: absolute;
-  border: 0px;
-  height: 100px;
-  width: 100px;
   background-color: white;
   bottom: 0px;
   right: 0px;
 }
 
 .our_cheese--cheese--part:nth-child(4){
-  position: absolute;
-  border: 0px;
-  height: 100px;
-  width: 100px;
   background-color: white;
   bottom: 0px;
   left: 0px;

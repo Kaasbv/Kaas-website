@@ -13,3 +13,12 @@ function updateMenu(){
     schrinked = false;
   }
 }
+
+function mailFunction() {
+  alert("You signed up for the newsletter");
+}
+
+function show_alert() 
+{
+  alert("Form submitted");
+}

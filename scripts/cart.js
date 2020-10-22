@@ -15,21 +15,21 @@ name, description, prices en image.
 
 const products = [
   {
-    name: "Kaas1",
-    description: "Dit is kaas1",
-    title: "",
+    name: "Golden dutch",
+    description: "Golden Dutch: an everyday cheese that tastes how cheese should taste.",
+    desciptionPoints: ["5 months old", "Firm", "Buttery", "Smooth"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas2",
-    description: "Dit is de kaas2",
-    title: "",
+    name: "Old Beiler",
+    description: "Old Beiler: a cheese for special evenings.",
+    desciptionPoints: ["16 months old", "Hard", "Strong-bodied", "Complex"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -37,12 +37,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Brown Beiler",
+    description: "The Brown Beiler: A nutty cheese",
+    desciptionPoints: ["8 months old", "Soft", "Creamy"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -50,12 +50,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Green Beiler",
+    description: "The Green Beiler: An old Cheese with rich tones of basil",
+    desciptionPoints: ["12 months old", "Hard", "Salty with fresh tones", "Balanced"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -63,12 +63,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Red Beiler",
+    description: "The Red Beiler: a semi-muture cheese",
+    desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -76,12 +76,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Oaker Beiler",
+    description: "The Oaker Beiler: a Cheese smoked with oak-wood",
+    desciptionPoints: [],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -89,11 +89,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
+    name: "The Beiler Duchess",
+    description: "The Beiler Duchess: a honey cheese with special selected herbs",
+    desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -101,11 +102,12 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
+    name: "Young Beiler",
+    description: "Young Beiler: Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
       {name: "1 kilo", price: 30},
       {name: "3 kilo", price: 80},
@@ -113,7 +115,33 @@ const products = [
       {name: "Heel wiel - avg. 12 kilo", price: 275},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+  },
+  {
+    name: "Young Beiler (lean)",
+    description: "Young Beiler (lean): Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
+    variants: [
+      {name: "1 kilo", price: 30},
+      {name: "3 kilo", price: 80},
+      {name: "Halve wiel - avg. 6 kilo", price: 150},
+      {name: "Heel wiel - avg. 12 kilo", price: 275},
+    ],
+    
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+  },
+  {
+    name: "Young Beiler (less salt)",
+    description: "Young Beiler (less salt): Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
+    variants: [
+      {name: "1 kilo", price: 30},
+      {name: "3 kilo", price: 80},
+      {name: "Halve wiel - avg. 6 kilo", price: 150},
+      {name: "Heel wiel - avg. 12 kilo", price: 275},
+    ],
+    
+    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
 ];
 
@@ -190,4 +218,57 @@ function getVariantFromCart(productId, variantId){
   }
 
   return false; //Als de loop is doorlopen (niks gevonden) return false;
+}
+
+function renderCatalog(){
+  var html = "";
+  var count = 0;
+
+  for(var product of products){
+    html += `
+    <div data-id="${count++}" class="card">
+      <img src="${product.image}">
+      <h1>${product.name}</h1>
+      <p class="title">
+        ${product.description}
+        ${renderCatalogPoints(product.desciptionPoints)}
+      </p>
+        <label for="weight">Choose the amount:</label>
+        <select name="weight" id="weight">
+          ${renderCatalogOptions(product.variants)}
+        </select>
+        <button class="catalog-button">Add to card</button>
+    </div>`
+  }
+
+  document.querySelector("#catalog-cards").innerHTML = html;
+}
+
+function setCatalogEvents(){
+  var buttons = document.querySelectorAll(".catalog-button");
+
+  for(var button of buttons){
+    button.addEventListener("click", catalogCartEvent);
+  }
+}
+
+function catalogCartEvent(){
+  alert("Placeholder: added to cart");
+}
+
+function renderCatalogOptions(variants){
+  var html = "";
+  var count = 0;
+  for(var variant of variants){
+    html += `<option value="${count++}">${variant.name} - ${variant.price}$</option>`
+  }
+  return html
+}
+
+function renderCatalogPoints(pointsArray){
+  var html = "<br>";
+  for(var point of pointsArray){
+    html += `・ ${point}・ <br>`
+  }
+  return html
 }

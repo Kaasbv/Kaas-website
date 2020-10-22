@@ -2,9 +2,28 @@
 <html>
   <head>
     <title>Kaas website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+   <body>
+     <nav>
+        <ul>
+          <li><img id="logo" src="/images/logo.png" alt="The Beiler Caseus" height="52px" width="50px"></a></li>
+          <li><a class="active" href="#Home">Home</a></li>
+          <li><a href="#Our-Cheese">Our Cheese</a></li>
+          <li><a href="#">How it's made</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Catalogus</a></li>
+          <li style="float:right; margin-right: 20px;"><a href="#"><img src="/images/profile.png" height="32px" width="32px"></a></li>
+          <li style="float:right"><a href="#"><img src="/images/shoppingcart.png" height="32px" width="32px"></a></li>
+        </ul>
+     </nav>
+    <div class="containerhome" id="Home">
+      <a class="scrollbutton" href="#Our-Cheese"><img src="/images/scrollcheese.png"></a>
+    </div>
     <div class="container">
       <h1>How it's made</h1>
       <div class="step">
@@ -157,5 +176,94 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="background">
+        <h1 class="text-center">Contact Us!</h1>
+          <div class="column">
+            <p>Here at The Beiler Caseus, we pride ourselves at customer service. 
+              If you have questions, feedback or recommendations, please fill in this form. 
+              One of our  employees will contact you as soon as possible!
+              <br><br>
+              In the meanwhile, enjoy these photographs of cows:
+            </p>
+              <div class="ZoomIn">
+                <ul>
+                  <li>
+                    <img class="zoom" src="/images/cows.png" title="cows" alt="cows in a field">
+                  </li>
+                  <li>
+                    <img class="zoom" src="/images/cows2.jpg" title="more cows" alt="cows in a field">
+                  </li>
+                  <li>
+                    <img class="zoom" src="/images/cows3.jpeg" title="even more cows" alt="cows in a field">
+                  </li>
+                  <li>
+                    <img class="zoom" src="/images/cows4.jpeg" title="..." alt="cows in a field">
+                  </li>
+                </ul>
+              </div> 
+          </div>
+          
+          <div class="column">
+            <section>
+              <form>
+                <label for="name">First Name:</label><br>
+                <input type="text" name="fname" placeholder="Your Name"><br>
+                <label for="email">Last Name:</label><br>
+                <input type="text" name="lname" placeholder="Your Last Name"><br>
+                <label for="phone">Email:</label><br>
+                <input type="text" name="email" id="required" placeholder="Your E-mail Adress"><br>
+                <label for="message">Message:</label><br>
+                <textarea type="text" placeholder="Your message to us" rows="10" cols="50"></textarea><br>
+                <input type="submit" value="Submit" onclick="show_alert();"> 
+              </form>
+            </section>
+          </div> 
+      </div>   
+    </div>
+    <footer>
+        <div id="footer-logo"><a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" style="width: 210px; padding: 5px; padding-left: 30px; padding-right: 30px;"></a>
+            </div>
+        <div class="wrapper1">
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Our Cheese</a>
+                <a href="./index.html">How it's Made</a>
+                <a href="./index.html">About Us</a>
+                <a href="./index.html">Shop</a>
+                <a href="./index.html">Profile</a>
+                <a href="./index.html">FAQ</a>
+            </div>  
+        </div>
+        <div class="wrapper2">
+            <div>
+                Contact:
+            </div>
+            <div>
+                Dorpsstraat 16
+            </div>
+            <div>
+                Kaasstad
+            </div>
+            <div>
+                TheBeilerCheese@gmail.com
+            </div>
+        </div>
+        <div class="wrapper3">
+            <div>
+                Newsletter: 
+            </div>
+            <input type="email" placeholder="Your email adress" id="emailinput">
+            <button id="newsletter" onclick="mailFunction()">Sign me up please!</button>
+        </div>
+        
+        <div id="copy">©TheBeilerCheese</div>
+    </footer>
+    <script src="contact_page.js"></script>
   </body>
 </html>
+
+<script>
+    function mailFunction() {
+      alert("You signed up for the newsletter");
+    }
+</script>

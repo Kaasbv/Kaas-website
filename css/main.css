@@ -1,36 +1,124 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0pt;
+ }
+
+ .scrollbutton {
+  text-align: center;
+  vertical-align: bottom;
+ }
+ 
+:root {
+  --light-shades: #F3EFE4;
+  --light-accent: #75CC00;
+  --main-brand: #DF9F0A;
+  --dark-accent: #18871E;
+  --dark-shades: #2B332E;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  margin-top: 0pt;
+  height: auto;
+  display: block;
+} 
+
+nav > ul {
+  top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 6vh;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li > a {
+  display: block;
+  color: var(--dark-shades);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  background-color: #F3EFE4;
+  padding-bottom: 20px; 
+}
+
 .container {
-  position: relative;
+  position: static;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
+  height: auto;
+  display: block;
+} 
+
+.containernavbar {
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  width: 100vw;
+  height: 6vh;
+  display: block;
+} 
+
+.containerhome {
+  position: static;
+  margin-top: 0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  border-top: 1vh;
+  width: 100vw;
+  height: 100vh;
   display: block;
 }
 
+.scrollbutton {
+  position: relative;
+  top: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Home {
+  background-image: url(/images/landing.jpg);
+  background-size: 100vw;
+  height: 100vh;
+}
+
+#Our-Cheese {
+  background-image: url(/images/ourcheese.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#logo {
+  margin: 6px;
+}
 /************** Meet the Team **********/
 
-#theTeam {
-  padding:10px;
-}
-
-#theTeam div {
-  overflow: hidden;
-}
-
-.teamTitle {
-  color: grey;
-}
-.teamCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-  text-align: center;
-  padding: 10px; 
-  float:left;
-  width: 20%; 
-  margin-bottom: 15px;
-  margin-right: 10px; 
-}
-.teamCard img {
-  width: 100%;
-}
+/************** How it's made **********/
 
 .step {
   position: relative;
@@ -118,6 +206,33 @@
 .steptransition:nth-child(5) {
   background-image: url(/images/path-inverted.png);
 }
+
+/************** Meet the Team **********/
+
+#theTeam {
+  padding:10px;
+}
+
+#theTeam div {
+  overflow: hidden;
+}
+
+.teamTitle {
+  color: grey;
+}
+.teamCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px; 
+  float:left;
+  width: 20%; 
+  margin-bottom: 15px;
+  margin-right: 10px; 
+}
+.teamCard img {
+  width: 100%;
+}
+
 .teamContainer{
   padding: 10px;
   text-align: center;
@@ -171,4 +286,199 @@
   --main-brand: #DF9F0A;
   --dark-accent: #18871E;
   --dark-shades: #2B332E;
+}
+
+footer::before {
+  background-image: url(/images/gras.jpg);
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  padding-left: 0;
+  padding-top: 70px;
+  filter: brightness(90%);
+  background-size: 100%;
+}
+
+footer {
+  height: 300px;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+  padding-left: 0;
+  padding-top: 70px;
+}
+
+#footer-logo {
+  margin-left: 120px;
+  float: left;
+  filter: invert(1);
+}
+
+.wrapper1 {
+  position: absolute;
+  margin-left: 450px;
+  float: left;
+}
+
+.wrapper1 > div {  
+  color: black;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.wrapper1 > a, .wrapper1 > a:link, .wrapper1 > a:visited {  
+  color: white;
+  text-decoration: none;
+  padding-bottom: 4px;
+  font-weight: bold;
+  display: block;
+  text-shadow: 1px 1px black;
+}
+
+.wrapper1 > a:hover {
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.wrapper2 {
+  position: absolute;
+  margin-left: 720px;
+  float: left;
+}
+
+.wrapper2 > div {
+  color: white;
+  padding-bottom: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+.wrapper3 {
+  position: absolute;
+  margin-left: 1300px;
+  float: left;
+}
+
+.wrapper3 > div {
+  color: white;
+  padding-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+#emailinput {
+  margin-bottom: 8px;
+}
+
+#newsletter {
+  display: block;
+}
+
+.background {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 1100px;
+  height: 650px;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.zoom
+{
+  position: relative;
+  width: 100px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.zoom:hover
+{
+  width: 200px;
+  height: 170px;
+  left: -25px;
+  top: -25px;
+  z-index: 1;
+}
+
+.ZoomIn ul
+{
+clear:both;
+}
+.ZoomIn li
+{
+  width: 102px;
+  height: 82px;
+  margin: 4px;
+  float: left;
+  overflow: visible;
+  display: block;
+}
+
+.column {
+  box-sizing: border-box;
+  float: right;
+  width: 50%; 
+  height: 100%;
+}
+
+form > input:hover, form > textarea:hover {
+  border: var(--dark-shades) 1px solid;
+}
+
+form > input:focus, form > textarea:focus {
+  outline: none;
+  color: var(--light-shades);
+  background-color: var(--dark-shades) ;
+}
+
+form > input {
+  width: 40%;
+}
+
+form > input, textarea {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;  
+  box-shadow: #2B332E;
+  margin: 7px;
+  box-shadow: 5px 5px 5px rgba(43,51,46,0.3); 
+}
+
+form > label {
+  margin: 7px;
+}
+
+form > input[type="submit"] { 
+  margin: 7px;
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+  box-shadow: none;
+}
+  
+form > input[type="submit"]:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+  cursor: pointer;
+}
+
+#copy {
+  color: white;
+  text-align: center;
+  padding-top: 270px;
+  text-shadow: 1px 1px black;
 }

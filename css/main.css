@@ -469,7 +469,7 @@ form > input[type="submit"] {
   color: var(--light-shades);
   box-shadow: none;
 }
-  
+   
 form > input[type="submit"]:hover {
   background-color: var(--light-accent);
   color: var(--dark-shades);

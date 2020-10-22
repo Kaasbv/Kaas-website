@@ -33,7 +33,17 @@ html {
   background: var(--dark-accent-opacity);
 }
 
-.shrinked-menu a {
+.single-page {
+  background: var(--light-shades);
+  color: var(--d)
+}
+
+.static-menu {
+  background: var(--dark-accent);
+  position: relative;
+}
+
+.static-menu, .shrinked-menu a {
   color: var(--dark-shades);
 }
 

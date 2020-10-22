@@ -20,10 +20,10 @@ html {
 :root {
   --light-shades: #F3EFE4;
   --light-accent: #75CC00;
-  --main-brand: rgb(223, 159, 10);
-  --dark-accent: rgb(24, 135, 30);
-  --dark-accent-opacity: rgba(24, 135, 30, 0.8);
-  --dark-shades: rgb(43, 51, 46);
+  --main-brand: #df9f0a;
+  --dark-accent: #18871e;
+  --dark-accent-opacity: #18871ecc;
+  --dark-shades: #2b332e;
 }
 
 .shrinked-menu {

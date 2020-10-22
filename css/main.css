@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -106,12 +110,12 @@ nav > ul > li > a:hover {
 }
 
 #our_cheese--left{
-  width: 50%;
+  width: 45%;
   float: left;
 }
 
 #our_cheese--right{
-  width: 50%;
+  width: 45%;
   float: right;
 }
 
@@ -157,6 +161,10 @@ nav > ul > li > a:hover {
   background-color: rgb(117, 81, 2);
   bottom: 0px;
   left: 0px;
+}
+
+.our_cheese--slide{
+  display: none;
 }
 
 /*exit**************our_cheese***************/

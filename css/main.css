@@ -412,8 +412,10 @@ footer {
 
 .ZoomIn ul
 {
-clear:both;
+clear: both;
+padding-left: 0px;
 }
+
 .ZoomIn li
 {
   width: 102px;
@@ -481,4 +483,20 @@ form > input[type="submit"]:hover {
   text-align: center;
   padding-top: 270px;
   text-shadow: 1px 1px black;
+}
+
+.social-m {
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30%;
+}
+
+.social-m:hover {
+  opacity: 0.7;
+}
+
+.social-m:active,:focus,:visited {
+  outline: none;
 }

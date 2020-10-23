@@ -224,7 +224,7 @@ function renderCatalog(){
   var html = "";
   var count = 0;
 
-  for(var product of products){
+  for(var product of products){//Loop door alle producten heen
     html += `
     <div data-id="${count++}" class="card">
       <img src="${product.image}">
@@ -238,37 +238,42 @@ function renderCatalog(){
           ${renderCatalogOptions(product.variants)}
         </select>
         <button class="catalog-button">Add to card</button>
-    </div>`
+    </div>` //Voeg een volledige cart html toe aan de html variable
   }
 
-  document.querySelector("#catalog-cards").innerHTML = html;
+  document.querySelector("#catalog-cards").innerHTML = html; //Zet de html in de parent
+  setCatalogEvents(); //run de catalog events functie zodat de addToCart button werkt
 }
 
 function setCatalogEvents(){
-  var buttons = document.querySelectorAll(".catalog-button");
+  var buttons = document.querySelectorAll(".catalog-button"); //verkrijg alle catalog buttons
 
-  for(var button of buttons){
-    button.addEventListener("click", catalogCartEvent);
+  for(var button of buttons){//Loopt door alle button elementen
+    button.addEventListener("click", catalogCartEvent); //Zet een click event
   }
 }
 
-function catalogCartEvent(){
-  alert("Placeholder: added to cart");
+function catalogCartEvent(event){
+  let cardElement = event.target.parentElement; //verkrijg de html parent namelijk de card div
+  let select = cardElement.querySelector("select"); //Verkrijg het select html element
+  let productId = cardElement.dataset.id; //Verkrijg het id van de data attribute
+  //add to cart
+  addToCart(productId, select.value); //voeg het product toe met variant aan de cart op basis van de value van de select
 }
 
-function renderCatalogOptions(variants){
+function renderCatalogOptions(variants){//render de variant array van de products
   var html = "";
   var count = 0;
   for(var variant of variants){
-    html += `<option value="${count++}">${variant.name} - ${variant.price}$</option>`
+    html += `<option value="${count++}">${variant.name} - ${variant.price}$</option>`;
   }
-  return html
+  return html;
 }
 
-function renderCatalogPoints(pointsArray){
-  var html = "<br>";
+function renderCatalogPoints(pointsArray){//render de catalog points op basis van de descriptionPoints
+  var html = "<br>"; 
   for(var point of pointsArray){
-    html += `・ ${point}・ <br>`
+    html += `・ ${point}・ <br>`;
   }
-  return html
+  return html;
 }

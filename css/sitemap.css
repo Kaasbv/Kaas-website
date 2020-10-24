@@ -19,28 +19,25 @@ body {
   background-color: var(--dark-shades)
 }
 
-.div-style {
-  margin-left: 33.3%;
-  margin-right: 33.3%;
-}
-
-h1 {
+.container h1 {
   margin: 50px;
   color: var(--light-shades);
   text-shadow: 4px 7px 17px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
 
-ul{
+.container ul{
   padding-left: 0px;
+  margin-left: 33.3%;
+  margin-right: 33.3%;
 }
 
-ul > li {
+.container ul > li {
   display: block;
   text-align: center;
 }
 
-a {
+.container a {
   display: inline-block;
   color: var(--light-shades);
   padding: 10px 15px;
@@ -50,7 +47,7 @@ a {
   transition: 0.3s ease-in-out;
   }
 
-a:hover {
+.container a:hover {
   transform: scale(1.3);
 }
 

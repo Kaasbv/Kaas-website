@@ -122,6 +122,16 @@ nav > ul > li > a:hover {
   left: calc(((100vw - 1100px) / 2) * -1);
 }
 
+@media screen and (max-width: 1100px) {
+  .container{
+    width: 100vh;
+    padding: 20px;
+  }
+  .container::before {
+    left: 0px;
+  }
+}
+
 .containerhome {
   position: static;
   margin-top: 0pt;

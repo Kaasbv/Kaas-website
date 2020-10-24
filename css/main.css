@@ -515,35 +515,45 @@ footer {
   text-align: center;
 }
 
-.zoom {
+#copy {
+  color: white;
+  text-align: center;
+  padding-top: 270px;
+  text-shadow: 1px 1px black;
+}
+
+/* Contact Us */
+
+.zoom ul {
+clear: both;
+padding-left: 0px;
+}
+
+.zoom li {
+  width: 100px;
+  margin: 4px;
+  float: left;
+  clear: right;
+  display: block;
+}
+
+.zoom img {
   position: relative;
   width: 100px;
   height: 80px;
   left: 0px;
   top: 0px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: 0.5s ease;
 }
 
-.zoom:hover {
+.zoom img:hover {
   width: 200px;
   height: 170px;
   left: -25px;
   top: -25px;
   z-index: 1;
-}
-
-.ZoomIn ul {
-  clear: both;
-}
-.ZoomIn li {
-  width: 102px;
-  height: 82px;
-  margin: 4px;
-  float: left;
-  overflow: visible;
-  display: block;
 }
 
 .column {
@@ -576,7 +586,7 @@ textarea {
   border-radius: 3px;
   box-shadow: #2b332e;
   margin: 7px;
-  box-shadow: 5px 5px 5px rgba(43, 51, 46, 0.3);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3); 
 }
 
 form > label {
@@ -601,9 +611,18 @@ form > input[type="submit"]:hover {
   cursor: pointer;
 }
 
-#copy {
-  color: white;
+.social-m > a > img {
+  padding: 5px;
+  width: 50px;
   text-align: center;
-  padding-top: 270px;
-  text-shadow: 1px 1px black;
+  text-decoration: none;
+  border-radius: 30%;
+}
+
+.social-m > a > img:hover {
+  opacity: 0.7;
+}
+
+.social-m > a > img:active,:focus,:visited {
+  outline: none;
 }

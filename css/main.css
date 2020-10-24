@@ -100,21 +100,23 @@
 
 #theTeam {
   padding:10px;
-}
-
-#theTeam div {
+  display: flex; 
+  flex-wrap: wrap;
   overflow: hidden;
 }
+
 
 .teamTitle {
   color: grey;
 }
+
+
 .teamCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px; 
   float:left;
-  width: 20%; 
+  width: 200px; 
   margin-bottom: 15px;
   margin-right: 10px; 
 }
@@ -172,23 +174,38 @@
 
 .faq {
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.faqQuestion{
+  margin-bottom: 10px;
 }
 
 .faqCollapse {
-background-color: grey;
-color: black;
+background-color:var(--dark-accent);
+color: white;
 cursor: pointer;
-padding: 10px;
+padding: 15px;
 text-align: left;
-width: 50%;
+width: 75%;
+border-style: none;
 }
 
 .active, .faqCollapse:hover {
-  background-color: cornsilk;
+  background-color: var(--light-accent);
+  border-style: solid;
 }
 .faqContent {
-  display: none;
+  overflow: hidden;
+  color: black;
+  width: 75%;
+  background-color: var(--light-shades);
+  max-height: 0 ;
+  transition: max-height 0.5s ease-out
+}
+
+.faqContent p {
+  margin-left: 15px;
 }
 
 /********** ROOT ********/

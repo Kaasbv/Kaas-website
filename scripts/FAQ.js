@@ -11,10 +11,19 @@ function toggleFaq(event){
     var clickedButton = event.target;
     var section = clickedButton.nextElementSibling;
     clickedButton.classList.toggle("active");
-    
-    if (section.style.display === "block") {
-        section.style.display = "none";
+    console.log(section.style.maxHeight)
+    /*if (section.style.maxHeight.length == 0) {
+        section.style.maxHeight = 0 + "px"
+        console.log(section.style.maxHeight)    
+    }
+    */
+    console.log(parseInt(section.style.maxHeight) !== 0)
+    console.log(section.style.maxHeight.length !== 0)
+    if (parseInt(section.style.maxHeight) !== 0 && section.style.maxHeight.length !== 0)  {
+        console.log("hoi")
+        section.style.maxHeight = 0 + "px";
     } else {
-        section.style.display = "block";
+        console.log("je dikke moeder op een driewieler")
+        section.style.maxHeight = 100 + "px";
     }
 }

@@ -532,6 +532,32 @@ nav > img {
   background-image: url(/images/path-inverted.png);
 }
 
+.step > aside > h3 {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .step .imagecircle, .steptransition {
+    display: none;
+  }
+
+  .step {
+    height: auto;
+  }
+  .step > aside > h3 {
+    display: block;
+  }
+  .step aside{
+    position: unset;
+    left: 0px !important;
+    top: unset;
+    transform: unset;
+    width: 100%;
+    margin: unset;
+  }
+  
+}
+
 /************** Meet the Team **********/
 
 

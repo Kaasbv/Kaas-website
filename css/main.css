@@ -15,6 +15,9 @@ html {
   margin: 0pt;
 }
 
+h1 {
+  text-align: center;
+}
 .scrollbutton {
   text-align: center;
   vertical-align: bottom;
@@ -440,10 +443,6 @@ nav > img {
 }
 
 /************** How it's made **********/
-#howItsMade h1{
-  padding:50px
-}
-
 .step {
   position: relative;
   height: 350px;

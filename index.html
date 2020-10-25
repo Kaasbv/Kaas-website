@@ -15,26 +15,29 @@
   <script src="scripts/main.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <!--LINK FONT HERE-->
+
+  <link rel="shortcut icon" href="images/favicon1.0.png" type="image/png">
 </head>
 
 <body>
   <nav>
-    <ul>
-      <li><img id="logo" src="/images/logo.png" alt="The Beiler Caseus" height="52px" width="50px"></a></li>
+    <img id="menu-icon" src="/images/icons8-menu-52.png">
+    <img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
+    <ul id="menu-links">
       <li><a class="active" href="#Home">Home</a></li>
-      <li><a href="#Our-Cheese">Our Cheese</a></li>
-      <li><a href="#">How it's made</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Our Team</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Catalogus</a></li>
-      <li style="float:right; margin-right: 20px;"><a href="#"><img src="/images/profile.png" height="32px"
-            width="32px"></a></li>
-      <li style="float:right"><a href="#"><img src="/images/shoppingcart.png" height="32px" width="32px"></a></li>
+      <li><a href="#our_cheese">Our Cheese</a></li>
+      <li><a href="#howItsMade">How it's made</a></li>
+      <li><a href="#aboutus">About us</a></li>
+      <li><a href="#theTeam">Our Team</a></li>
+      <li><a href="#contactUs">Contact</a></li>
+      <li><a href="# ">Catalogus</a></li>
     </ul>
+    <div id="menu-icons">
+      <img id="menu-shopping" src="/images/shoppingcart.png" height="32px" width="32px"></a>
+    </div>
   </nav>
   <div class="containerhome" id="Home">
-    <a class="scrollbutton" href="#Our-Cheese"><img src="/images/scrollcheese.png"></a>
+    <img id="homeLogo" src="images/logo.png" alt="Logo: The Beiler Caseus">
   </div>
   <div class="container">
     <div id="our_cheese">
@@ -77,50 +80,75 @@
           <div class="our_cheese--cheese--part"></div>
           <div class="our_cheese--cheese--part"></div>
         </div>
-        <div class="our_cheese--slide" id="golden_dutch">
-          <h4>Golden Dutch</h4>
-          <p><em>Lorem Info List Kaas</em></p>
+      </div>
+    </div>
+    <div class="our_cheese--block">
+      <div class="our_cheese--slide" id="golden_dutch">
+        <h3>Golden Dutch</h3>
+        <img src="images/golden_dutch.png" title="The Beiler Caseus: Golden Dutch"
+          alt="A picture of the Golden Dutch Cheese from The Beiler Caseus. A picture of a cheese with ocher yellow accents.">
+        <div class="info">
+          <p><em>The Golden Dutch is an everyday cheese that tastes how cheese should taste. It's our most popular
+              cheese and well beloved cheese.</em></p>
           <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
+            <li>5 months old</li>
+            <li>Firm</li>
+            <li>Smooth</li>
+            <li>Buttery</li>
           </ul>
         </div>
-        <div class="our_cheese--slide" id="old_beiler">
-          <h4>Old Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
+      </div>
+      <div class="our_cheese--slide" id="old_beiler">
+        <h3>Old Beiler</h3>
+        <img src="images/old_beiler.png" title="The Beiler Caseus: Old Beiler"
+          alt="A picture of the Old Beiler Cheese from The Beiler Caseus. A picture of a cheese with black and golden accents.">
+        <div class="info">
+          <p><em>The Old Beiler is a cheese for special evenings. It's a very sophisticated cheese with a strong taste.
+            Ideal for your evenings snacks besides a pint or glass of wine.</em></p>
+        <ul>
+          <li>16 months old</li>
+          <li>Hard</li>
+          <li>Complex</li>
+          <li>Stong-bodied</li>
+          <li>Salty</li>
+        </ul>
+        </div>
+      </div>
+      <div class="our_cheese--slide" id="the_green_beiler">
+        <h3>The Green Beiler</h3>
+        <img src="images/the_green_beiler.png" title="The Beiler Caseus: The Green Beiler"
+          alt="A picture of the Green Beiler Cheese from The Beiler Caseus. A picture of a cheese with green accents.">
+        <div class="info">
+          <p><em>The Green Beiler is an old cheese with rich tones of basil to refresh your appetizers and snacks.</em>
+          </p>
           <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
+            <li>12 months old</li>
+            <li>Hard</li>
+            <li>Balanced</li>
+            <li>Fresh tones</li>
+            <li>Salty</li>
           </ul>
         </div>
-        <div class="our_cheese--slide" id="the_brown_beiler">
-          <h4>The Brown Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
-          <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
-          </ul>
-        </div>
-        <div class="our_cheese--slide" id="the_green_beiler">
-          <h4>The Green Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
-          <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
-          </ul>
+      </div>
+      <div class="our_cheese--slide" id="the_brown_beiler">
+        <h3>The Brown Beiler</h3>
+        <img src="images/the_brown_beiler.png" title="The Beiler Caseus: The Brown Beiler"
+          alt="A picture of the Brown Beiler Cheese from The Beiler Caseus. A picture of a cheese with brown accents.">
+        <div class="info">
+          <p><em>The Brown Beiler is a nutty cheese. It's a fabulous cheese for the fall and holiday seasons.</em></p>
+        <ul>
+          <li>4 months old</li>
+          <li>Soft</li>
+          <li>Richfull</li>
+          <li>Creamy</li>
+          <li>Hazelnut and special selected nuts</li>
+        </ul>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
+    <div id="howItsMade">
     <h1>How it's made</h1>
     <div class="step">
       <div class="imagecircle">
@@ -167,33 +195,30 @@
       </aside>
     </div>
   </div>
-
-
-    <div class="container">
-      <div class="aboutus">
-        <h1>About us</h1>
-        <div>
-          <h2>The Idea</h2>
-          <img src= "images/logo.png" alt="Cheese" height= "300px" width="300px"> </img>
-        </div>
-        <div>
-        <p>The Beiler Caseus is a very enthousiastic company looking to introduce dutch top quality dutch cheese to the American People.</p>
-        <p>When we scope in on the cheese market in the United States, we see that there is barely anyone taking advantage in this market. The average American eats a lot of cheese, but this consists mostly out of "fake" products. for example cheddar cheese, cheese balls and cheese spray.</p>  
-        <p>The Beiler Caseus wants to bring some change by introducing "luxury cheese" on the American Market. The American people Adore their "influencers" and by introducing a high end product on the market we want to change the social image of cheese.</p>
-        <p>The cheese from the Beiler Caseus is going to be made and produced in the Beilevaard, which is located in Drenthe, the Netherlands. After the production Process it will be shipped by UPS to America in Special pre-ripening containers.</p>
-        </div>
-       </div>
+  </div>
+  <div class="container">
+    <div id="aboutus">
+      <h1>About us</h1>
+      <div>
+        <h2>The Idea</h2>
+        <img src="images/logo.png" alt="Cheese" height="300px" width="300px"> 
+      </div>
+      <div>
+      <p>The Beiler Caseus is a very enthousiastic company looking to introduce dutch top quality dutch cheese to the American People.</p>
+      <p>When we scope in on the cheese market in the United States, we see that there is barely anyone taking advantage in this market. The average American eats a lot of cheese, but this consists mostly out of "fake" products. for example cheddar cheese, cheese balls and cheese spray.</p>  
+      <p>The Beiler Caseus wants to bring some change by introducing "luxury cheese" on the American Market. The American people Adore their "influencers" and by introducing a high end product on the market we want to change the social image of cheese.</p>
+      <p>The cheese from the Beiler Caseus is going to be made and produced in the Beilevaard, which is located in Drenthe, the Netherlands. After the production Process it will be shipped by UPS to America in Special pre-ripening containers.</p>
+      </div>
      </div>
-    <div class="container">
-      <h2 id= "teamHeader">The Team</h2>
-      <div id = "theTeam">
-
-        
-
-      <!-- Meet the Team / jimmy-->
-         <div class = "teamCard">
-            <img src = "images/Jimmy.png" alt= "jimmy">
-          <div class = "teamContainer">
+   </div>
+  </div>
+  <div class="container">
+    <div id="theTeam">
+        <h2 id="teamHeader">The Team</h2>
+        <!-- Meet the Team / jimmy-->
+        <div class="teamCard">
+          <img src="images/Jimmy.png" alt="jimmy">
+          <div class="teamContainer">
             <h3>Jimmy</h3>
             <p class="teamTitle">Cheese Facility Officer</p>
             <p>ons meesterbrein</p>
@@ -204,12 +229,13 @@
 
         <!-- Meet the Team / Marijn-->
         <div class="teamCard">
-          <img src="images/Marijn.png" alt="Marijn">
+          <img src="images/smoel_cmo_marijn.jpg" title="Marijn van Aalst" alt="Marijn, our Cheese Marketing Officer">
           <div class="teamContainer">
-            <h3>Marijn</h3>
+            <h3>Marijn van Aalst</h3>
             <p class="teamTitle">Cheese Marketing Officer</p>
-            <p>ons finalcieel expert</p>
-            <p>meesterMarijn@baas.nl</p>
+            <p>Marijn is responsible for the marketing of The Beiler Caseus. He is the creative brain selling you our
+              cheese. If you are unpleased by our marketing please contact Marijn</p>
+            <p>marijnva@thebeilercaseus.com</p>
             <button>Contact</button>
           </div>
         </div>
@@ -278,7 +304,7 @@
       </div>
     </div>
   <div class="container">
-    <div class="row">
+    <div id="contactUs" class="contact-row">
       <h1 class="text-center">Contact Us!</h1>
         <div class="column">
           <p>Here at The Beiler Caseus, we pride ourselves at customer service. 
@@ -328,20 +354,20 @@
             </form>
           </section>
         </div> 
-    </div>   
+    </div> 
   </div>
   <footer>
-    <div id="footer-logo"><a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo"
-          style="width: 210px; padding: 5px; padding-left: 30px; padding-right: 30px;"></a>
+    <div id="footer-logo">
+      <a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" ></a>
     </div>
     <div class="wrapper1">
-      <a href="./index.html">Home</a>
-      <a href="./index.html">Our Cheese</a>
-      <a href="./index.html">How it's Made</a>
-      <a href="./index.html">About Us</a>
-      <a href="./index.html">Shop</a>
+      <a href="#Home">Home</a>
+      <a href="#our_cheese">Our Cheese</a>
+      <a href="#howItsMade">How it's Made</a>
+      <a href="#aboutus">About Us</a>
+      <a href="./cart.html">Shop</a>
       <a href="./index.html">Profile</a>
-      <a href="./index.html">FAQ</a>
+      <a href="./faq.html">FAQ</a>
     </div>
     <div class="wrapper2">
       <div>

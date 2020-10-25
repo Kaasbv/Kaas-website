@@ -119,8 +119,9 @@ const products = [
 
 var cart = [];
 
-//Onload event for initCart
-window.addEventListener("load", readCart);
+
+//Read cart first
+readCart();
 
 function readCart(){
   var data = localStorage.getItem("cart"); //Get data/json array string from localStorage
@@ -169,17 +170,17 @@ function clearCart(){
 }
 
 function removeFromCart(productId, variantId){
-  //Check of product and pricing bestaat in producten
-  if(products[productId]){
-    if(products[productId].variants[variantId]){
-      delete products[productId].variants[variantId];
-      saveCart();
-    }else{
-      alert("Variant doesn't exists!"); //Geef error
+  //Check of product and variant bestaat in cart
+  for(let cartIndex = 0; cartIndex < cart.length; cartIndex++){//Loop door cart
+    let cartItem = cart[cartIndex]; //verkrgijg cart item
+    if(cartItem.productId === productId && cartItem.variantId === variantId){ //Check of het is wat wij zoeken
+      cart.splice(cartIndex, 1); //Verwijder het item uit de array
+      saveCart(); //Sla de cart op
+      return; //Exit de functie
     }
-  }else{
-    alert("Product doesn't exists!"); //Geef error
   }
+
+  alert("Can't find cart item to delete!"); //Als er geen exit is geweest geef error
 }
 
 function getVariantFromCart(productId, variantId){
@@ -190,4 +191,84 @@ function getVariantFromCart(productId, variantId){
   }
 
   return false; //Als de loop is doorlopen (niks gevonden) return false;
+}
+
+function setEvents(){
+  var amountInputs = document.querySelectorAll(".cart-amount input");
+  
+  for(var inputElement of amountInputs){
+    inputElement.addEventListener("change", updateAmount);
+  }
+
+  var trashes = document.querySelectorAll(".cart-trash");
+
+  for(var trashELement of trashes){
+    trashELement.addEventListener("click", removeCartEvent);
+  }
+}
+
+function removeCartEvent(event){
+  let inputElement = event.target;
+  let cartElement = inputElement.parentElement.parentElement;
+  let cartId = cartElement.dataset.id;
+
+  removeFromCart(cart[cartId].productId, cart[cartId].variantId);
+
+  renderCart();
+}
+
+function updateAmount(event){
+  let inputElement = event.target;
+  let cartElement = inputElement.parentElement.parentElement;
+  let cartId = cartElement.dataset.id;
+
+  let newValue = inputElement.value;
+  
+  if(newValue === "0"){
+    removeFromCart(cart[cartId].productId, cart[cartId].variantId);
+  }else{
+    cart[cartId].amount = inputElement.value;
+  }
+  //Update
+  saveCart();
+  //renderCart again
+  renderCart();
+}
+
+function renderCart(){
+  var html = "";
+  var count = 0;
+  for(let cartItem of cart){
+    var price = cartItem.variants[cartItem.variantId].price * cartItem.amount;
+
+    html += `
+      <div data-id="${count++}">
+        <img src="${cartItem.image}">
+        <div class="cart-productinfo">
+          <h2>${cartItem.name} - ${cartItem.variants[cartItem.variantId].name}</h2>
+          <p>${cartItem.description}</p>
+        </div>
+        <div class="cart-amount">
+          <span>Amount: </span>
+          <input min="0" type="number" value="${cartItem.amount}">
+        </div>
+        <div class="cart-price">
+          <span>${price}$</span>
+          <img class="cart-trash" src="images/trash.png">
+        </div>
+      </div>
+    `;
+  }
+  document.querySelector("#cart-items").innerHTML = html;
+
+  //Calculate total
+  var total = 0;
+  var totalElement = document.querySelector("#cart-total");
+  for(let cartItem of cart){
+    total += cartItem.variants[cartItem.variantId].price * cartItem.amount;
+  }
+
+  totalElement.innerHTML = total + "$";
+
+  setEvents();
 }

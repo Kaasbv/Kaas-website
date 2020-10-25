@@ -876,20 +876,14 @@ padding-left: 0px;
   height: 100%;
 }
 
-form > input:hover,
-form > textarea:hover {
-  border: var(--dark-shades) 1px solid;
-}
-
-form > input:focus,
-form > textarea:focus {
-  outline: none;
-  color: var(--light-shades);
-  background-color: var(--dark-shades);
+.contact-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 form > input {
-  width: 40%;
+  width: 200px;
 }
 
 form > input,
@@ -939,6 +933,13 @@ form > input[type="submit"]:hover {
 .social-m > a > img:active,:focus,:visited {
   outline: none;
 }
+
+@media screen and (max-width: 1100px){ 
+  .column {
+    width: 100%;  
+  }
+}
+
 
 .button {
   margin: 7px;

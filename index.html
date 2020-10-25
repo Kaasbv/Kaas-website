@@ -304,8 +304,7 @@
       </div>
     </div>
   <div class="container">
-    <div id="contactUs">
-    <div class="background">
+    <div id="contactUs" class="contact-row">
       <h1 class="text-center">Contact Us!</h1>
         <div class="column">
           <p>Here at The Beiler Caseus, we pride ourselves at customer service. 
@@ -342,7 +341,7 @@
         
         <div class="column">
           <section>
-            <form>
+            <form onsubmit="return checkEmail(this)">
               <label for="name">First Name:</label><br>
               <input type="text" name="fname" placeholder="Your Name"><br>
               <label for="email">Last Name:</label><br>
@@ -351,12 +350,11 @@
               <input type="text" name="email" id="required" placeholder="Your E-mail Adress"><br>
               <label for="message">Message:</label><br>
               <textarea type="text" placeholder="Your message to us" rows="10" cols="50"></textarea><br>
-              <input type="submit" value="Submit" onclick="show_alert();"> 
+              <input type="submit" value="Submit"> 
             </form>
           </section>
         </div> 
-    </div>
-    </div>   
+    </div> 
   </div>
   <footer>
     <div id="footer-logo">
@@ -401,3 +399,4 @@
 <!--javascript bestanden-->
 <script src="scripts\ourcheese.js" type="text/javascript"></script>
 <script src="scripts/FAQ.js" type= "text/javascript"></script>
+<script src="scripts/contact.js" type= "text/javascript"></script>

@@ -636,18 +636,6 @@ padding-left: 0px;
   clear: both;
 }
 
-form > input:hover,
-form > textarea:hover {
-  border: var(--dark-shades) 1px solid;
-}
-
-form > input:focus,
-form > textarea:focus {
-  outline: none;
-  color: var(--light-shades);
-  background-color: var(--dark-shades);
-}
-
 form > input {
   width: 200px;
 }

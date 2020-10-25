@@ -13,16 +13,17 @@ Sla alle producten op in een array van objecten. Elk item in deze array heeft de
 name, description, prices en image.
 */
 
+
 const products = [
   {
     name: "Golden dutch",
     description: "Golden Dutch: an everyday cheese that tastes how cheese should taste.",
     desciptionPoints: ["5 months old", "Firm", "Buttery", "Smooth"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 40},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 40, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
@@ -31,10 +32,10 @@ const products = [
     description: "Old Beiler: a cheese for special evenings.",
     desciptionPoints: ["16 months old", "Hard", "Strong-bodied", "Complex"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -44,10 +45,10 @@ const products = [
     description: "The Brown Beiler: A nutty cheese.",
     desciptionPoints: ["8 months old", "Soft", "Creamy"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -57,10 +58,10 @@ const products = [
     description: "The Green Beiler: An old Cheese with rich tones of basil",
     desciptionPoints: ["12 months old", "Hard", "Salty with fresh tones", "Balanced"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -70,10 +71,10 @@ const products = [
     description: "The Red Beiler: a semi-muture cheese",
     desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -83,10 +84,10 @@ const products = [
     description: "The Oaker Beiler: a Cheese smoked with oak-wood",
     desciptionPoints: [],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -96,10 +97,10 @@ const products = [
     description: "The Beiler Duchess: a honey cheese with special selected herbs",
     desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -109,10 +110,10 @@ const products = [
     description: "Young Beiler: Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -122,10 +123,10 @@ const products = [
     description: "Young Beiler (lean): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -135,10 +136,10 @@ const products = [
     description: "Young Beiler (less salt): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
     variants: [
-      {name: "1 kg (±2.2 lb)", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kilo", price: 80, kilo: 3},
+      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
+      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
     ],
     
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
@@ -264,8 +265,10 @@ function catalogCartEvent(event){
 function renderCatalogOptions(variants){//render de variant array van de products
   var html = "";
   var count = 0;
+  const kiloToPounds = 2.2046226218;
   for(var variant of variants){
-    html += `<option value="${count++}">${variant.name} - ${variant.price}$</option>`;
+    let pounds = (variant.kilo * kiloToPounds).toFixed(2);
+    html += `<option value="${count++}">${variant.name} (± ${pounds}lb) - ${variant.price} $</option>`;
   }
   return html;
 }

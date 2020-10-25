@@ -28,7 +28,7 @@ h1 {
   --light-accent: #75cc00;
   --main-brand: #df9f0a;
   --dark-accent: #18871e;
-  --dark-accent-opacity: #18871ecc;
+  --dark-accent-opacity: #18861de6;
   --dark-shades: #2b332e;
 }
 
@@ -61,6 +61,10 @@ textarea {
   margin: auto;
 }
 
+.shrinked-menu #menu-logo {
+  display: block;
+}
+
 @media only screen and (max-width: 1100px){
   #homeLogo{
     width: 50%;
@@ -79,14 +83,12 @@ nav {
 
 #menu-logo {
   position: relative;
-  display: block;
+  display: none;
   padding: 5px;
   margin: 0px;
   height: 100%;
   float: left;
 }
-
-
 
 nav > ul {
   position: relative;
@@ -136,6 +138,10 @@ nav > img {
 }
 
 @media screen and (max-width: 1100px) {
+  #menu-logo {
+    display: block;
+  }
+
   nav {
     background-color: var(--dark-accent-opacity);
   }

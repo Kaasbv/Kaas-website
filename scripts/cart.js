@@ -19,7 +19,7 @@ const products = [
     description: "Golden Dutch: an everyday cheese that tastes how cheese should taste.",
     desciptionPoints: ["5 months old", "Firm", "Buttery", "Smooth"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 40},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -31,7 +31,7 @@ const products = [
     description: "Old Beiler: a cheese for special evenings.",
     desciptionPoints: ["16 months old", "Hard", "Strong-bodied", "Complex"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -41,10 +41,10 @@ const products = [
   },
   {
     name: "The Brown Beiler",
-    description: "The Brown Beiler: A nutty cheese",
+    description: "The Brown Beiler: A nutty cheese.",
     desciptionPoints: ["8 months old", "Soft", "Creamy"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -57,7 +57,7 @@ const products = [
     description: "The Green Beiler: An old Cheese with rich tones of basil",
     desciptionPoints: ["12 months old", "Hard", "Salty with fresh tones", "Balanced"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -70,7 +70,7 @@ const products = [
     description: "The Red Beiler: a semi-muture cheese",
     desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -83,7 +83,7 @@ const products = [
     description: "The Oaker Beiler: a Cheese smoked with oak-wood",
     desciptionPoints: [],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -96,7 +96,7 @@ const products = [
     description: "The Beiler Duchess: a honey cheese with special selected herbs",
     desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -109,7 +109,7 @@ const products = [
     description: "Young Beiler: Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -122,7 +122,7 @@ const products = [
     description: "Young Beiler (lean): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -135,7 +135,7 @@ const products = [
     description: "Young Beiler (less salt): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
     variants: [
-      {name: "1 kilo", price: 30},
+      {name: "1 kg (±2.2 lb)", price: 30},
       {name: "3 kilo", price: 80},
       {name: "Halve wiel - avg. 6 kilo", price: 150},
       {name: "Heel wiel - avg. 12 kilo", price: 275},
@@ -273,7 +273,7 @@ function renderCatalogOptions(variants){//render de variant array van de product
 function renderCatalogPoints(pointsArray){//render de catalog points op basis van de descriptionPoints
   var html = "<br>"; 
   for(var point of pointsArray){
-    html += `・ ${point}・ <br>`;
+    html += `・ ${point} <br>`;
   }
   return html;
 }

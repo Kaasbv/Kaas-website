@@ -597,15 +597,24 @@ form > input[type="submit"]:hover {
   float: left;
   margin: 10px;
   position: relative; 
-  box-shadow: 0 4px 8px 0 var(--dark-shades);
+  box-shadow: 0 4px 8px 0 black;
   max-width: 300px;
-   text-align: center;
+  text-align: center;
   padding: 20px;
   font-family: Arial;
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
 }
+
+.card h1 {
+  height: 60px;
+}
+
+
 
 .title {
 height: 175px;
+text-align: left;
 
 }
 
@@ -630,6 +639,7 @@ height: 175px;
   cursor: pointer;
   width: 80%;
   font-size: 18px;
+  margin-top: 12px;
 }
 
 .card button:hover {

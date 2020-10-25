@@ -876,7 +876,7 @@ padding-left: 0px;
   height: 100%;
 }
 
-.row:after {
+.contact-row:after {
   content: "";
   display: table;
   clear: both;

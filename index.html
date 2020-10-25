@@ -312,19 +312,21 @@
                 </ul>
             </div> 
         </div>
-   
-      <div class="column">
-        <section>
-          <form action="/URL" method="POST">
-            <label for="name">Your Name:</label><br>
-            <input type="text" name="fname" placeholder="First*" required><input type="text" name="lname" placeholder="Last*" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" placeholder="Email*" required><br>
-            <label for="message">Message:</label><br>
-            <textarea type="text" placeholder="Your message to us*" rows="10" cols="50" required></textarea><br>
-            <input type="submit" value="Submit" onclick="show_alert();">
-          </form>
-        </section>
+        
+        <div class="column">
+          <section>
+            <form>
+              <label for="name">First Name:</label><br>
+              <input type="text" name="fname" placeholder="Your Name"><br>
+              <label for="email">Last Name:</label><br>
+              <input type="text" name="lname" placeholder="Your Last Name"><br>
+              <label for="phone">Email:</label><br>
+              <input type="text" name="email" id="required" placeholder="Your E-mail Adress"><br>
+              <label for="message">Message:</label><br>
+              <textarea type="text" placeholder="Your message to us" rows="10" cols="50"></textarea><br>
+              <input type="submit" value="Submit" onclick="show_alert();"> 
+            </form>
+          </section>
         </div> 
     </div>   
   </div>

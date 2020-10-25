@@ -41,6 +41,20 @@ textarea {
   resize: none;
 }
 
+#homeLogo{
+  width: 320px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1100px){
+  #homeLogo{
+    width: 220px;
+    margin-top: 50px;
+  }
+}
+
 nav {
   position: fixed;
   width: 100vw;
@@ -162,6 +176,10 @@ nav > ul > li > a:hover {
   overflow: hidden;
 }
 
+#our_cheese h1{
+  text-align: center;
+}
+
 #our_cheese--left{
   width: 45%;
   float: left;
@@ -181,6 +199,10 @@ nav > ul > li > a:hover {
   width: 400px;
   background-color: grey;
   overflow: hidden;
+}
+
+.our_cheese--block{
+  margin-bottom: 40px;
 }
 
 .our_cheese--cheese--part{
@@ -229,6 +251,20 @@ nav > ul > li > a:hover {
 
 .our_cheese--slide{
   display: none;
+  overflow: hidden;
+}
+
+.our_cheese--slide img{
+  position: relative;
+  width: 300px;
+  border-radius: 10%;
+  float: left;
+}
+
+.our_cheese--slide .info{
+  position: relative;
+  float: right;
+  width: 60%;
 }
 
 .our_cheese--slide.current_slide{
@@ -243,10 +279,6 @@ nav > ul > li > a:hover {
 }
 
 @media only screen and (max-width: 1100px){
-  #our_cheese{
-    overflow: hidden;
-  }
-  
   #our_cheese--left{
     width: 100%;
   }
@@ -263,6 +295,27 @@ nav > ul > li > a:hover {
   .our_cheese--cheese--part{
     width: 150px;
     height: 150px;
+  }
+
+  .our_cheese--block{
+    margin-bottom: 0px;
+  }
+
+  .our_cheese--slide h3{
+    text-align: center;
+  }
+
+  .our_cheese--slide img{
+    width: 200px;
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .our_cheese--slide .info{
+    float: none;
+    width: 100%;
   }
 }
 /*exit**************our_cheese***************/

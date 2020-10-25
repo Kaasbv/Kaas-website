@@ -33,7 +33,17 @@ html {
   background: var(--dark-accent-opacity);
 }
 
-.shrinked-menu a {
+.single-page {
+  background: var(--light-shades);
+  color: var(--d)
+}
+
+.static-menu {
+  background: var(--dark-accent);
+  position: relative;
+}
+
+.static-menu, .shrinked-menu a {
   color: var(--dark-shades);
 }
 
@@ -928,4 +938,22 @@ form > input[type="submit"]:hover {
 
 .social-m > a > img:active,:focus,:visited {
   outline: none;
+}
+
+.button {
+  margin: 7px;
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+  box-shadow: none;
+}
+
+.button:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+  cursor: pointer;
 }

@@ -15,6 +15,8 @@
   <script src="scripts/main.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <!--LINK FONT HERE-->
+
+  <link rel="shortcut icon" href="images/favicon1.0.png" type="image/png">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
     </div>
   </nav>
   <div class="containerhome" id="Home">
-    <a class="scrollbutton" href="#Our-Cheese"><img src="/images/scrollcheese.png"></a>
+    <img id="homeLogo" src="images/logo.png" alt="Logo: The Beiler Caseus">
   </div>
   <div class="container">
     <div id="our_cheese">
@@ -78,125 +80,145 @@
           <div class="our_cheese--cheese--part"></div>
           <div class="our_cheese--cheese--part"></div>
         </div>
-        <div class="our_cheese--slide" id="golden_dutch">
-          <h4>Golden Dutch</h4>
-          <p><em>Lorem Info List Kaas</em></p>
+      </div>
+    </div>
+    <div class="our_cheese--block">
+      <div class="our_cheese--slide" id="golden_dutch">
+        <h3>Golden Dutch</h3>
+        <img src="images/golden_dutch.png" title="The Beiler Caseus: Golden Dutch"
+          alt="A picture of the Golden Dutch Cheese from The Beiler Caseus. A picture of a cheese with ocher yellow accents.">
+        <div class="info">
+          <p><em>The Golden Dutch is an everyday cheese that tastes how cheese should taste. It's our most popular
+              cheese and well beloved cheese.</em></p>
           <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
+            <li>5 months old</li>
+            <li>Firm</li>
+            <li>Smooth</li>
+            <li>Buttery</li>
           </ul>
         </div>
-        <div class="our_cheese--slide" id="old_beiler">
-          <h4>Old Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
+      </div>
+      <div class="our_cheese--slide" id="old_beiler">
+        <h3>Old Beiler</h3>
+        <img src="images/old_beiler.png" title="The Beiler Caseus: Old Beiler"
+          alt="A picture of the Old Beiler Cheese from The Beiler Caseus. A picture of a cheese with black and golden accents.">
+        <div class="info">
+          <p><em>The Old Beiler is a cheese for special evenings. It's a very sophisticated cheese with a strong taste.
+            Ideal for your evenings snacks besides a pint or glass of wine.</em></p>
+        <ul>
+          <li>16 months old</li>
+          <li>Hard</li>
+          <li>Complex</li>
+          <li>Stong-bodied</li>
+          <li>Salty</li>
+        </ul>
+        </div>
+      </div>
+      <div class="our_cheese--slide" id="the_green_beiler">
+        <h3>The Green Beiler</h3>
+        <img src="images/the_green_beiler.png" title="The Beiler Caseus: The Green Beiler"
+          alt="A picture of the Green Beiler Cheese from The Beiler Caseus. A picture of a cheese with green accents.">
+        <div class="info">
+          <p><em>The Green Beiler is an old cheese with rich tones of basil to refresh your appetizers and snacks.</em>
+          </p>
           <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
+            <li>12 months old</li>
+            <li>Hard</li>
+            <li>Balanced</li>
+            <li>Fresh tones</li>
+            <li>Salty</li>
           </ul>
         </div>
-        <div class="our_cheese--slide" id="the_brown_beiler">
-          <h4>The Brown Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
-          <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
-          </ul>
-        </div>
-        <div class="our_cheese--slide" id="the_green_beiler">
-          <h4>The Green Beiler</h4>
-          <p><em>Lorem Info List Kaas</em></p>
-          <ul>
-            <li>Age</li>
-            <li>Feel</li>
-            <li>Taste like</li>
-            <li>Taste</li>
-          </ul>
+      </div>
+      <div class="our_cheese--slide" id="the_brown_beiler">
+        <h3>The Brown Beiler</h3>
+        <img src="images/the_brown_beiler.png" title="The Beiler Caseus: The Brown Beiler"
+          alt="A picture of the Brown Beiler Cheese from The Beiler Caseus. A picture of a cheese with brown accents.">
+        <div class="info">
+          <p><em>The Brown Beiler is a nutty cheese. It's a fabulous cheese for the fall and holiday seasons.</em></p>
+        <ul>
+          <li>4 months old</li>
+          <li>Soft</li>
+          <li>Richfull</li>
+          <li>Creamy</li>
+          <li>Hazelnut and special selected nuts</li>
+        </ul>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div id="howItsMade">
-      <h1>How it's made</h1>
-      <div class="step">
-        <div class="imagecircle">
-          <div class="imageicon"></div>
-        </div>
-        <aside>
-          <p>The most important ingredient of cheese is of course milk. The origin and type of milk are also a great
-            factor
-            for the taste. This is why our milk is coming from dutch cows on the dutch grasslands<br><br>The cows get high
-            quality food, enough space and ofcourse lots of love. They'll be outside atleast 8 hours a day and can choose
-            when they want to be milked with our automatic milk machines. After milking it is saved in barrels.<br></p>
-        </aside>
+    <h1>How it's made</h1>
+    <div class="step">
+      <div class="imagecircle">
+        <div class="imageicon"></div>
       </div>
-      <div class="steptransition"></div>
-      <div class="step">
-        <div class="imagecircle">
-          <div class="imageicon"></div>
-        </div>
-        <aside>
-          <p>Now the most difficult part, actually creating the cheese. It is created in the following steps:
-          <ol>
-            <li>Acidification: the first step of making cheese is adding a starter culture. These are bacteria who turn
-              the sugar in the milk into lactic acid.</li>
-            <li>Coagulation: if the ph of the milk is low enough after the first step, the coalugant can be added to
-              solify the milk.</li>
-            <li>Cutting and seperating: it will now form curds and whey, the curds are cut in pieces and the whey is
-              seperated. </li>
-            <li>Aging: The cheese will be put to rest from a few weeks to a few months depending on how long that kind of
-              cheese needs to mature.</li>
-          </ol>
-          When a cheese is ready to be sold it well be packaged, added to our sellable inventory and show up on the
-          site.
-          </p>
-        </aside>
+      <aside>
+        <p>The most important ingredient of cheese is of course milk. The origin and type of milk are also a great
+          factor
+          for the taste. This is why our milk is coming from dutch cows on the dutch grasslands<br><br>The cows get high
+          quality food, enough space and ofcourse lots of love. They'll be outside atleast 8 hours a day and can choose
+          when they want to be milked with our automatic milk machines. After milking it is saved in barrels.<br></p>
+      </aside>
+    </div>
+    <div class="steptransition"></div>
+    <div class="step">
+      <div class="imagecircle">
+        <div class="imageicon"></div>
       </div>
-      <div class="steptransition"></div>
-      <div class="step">
-        <div class="imagecircle">
-          <div class="imageicon"></div>
-        </div>
-        <aside>
-          <p>After your order, the order will be packed the same day by our warehouse employees and then shipped with UPS.
-            Orders are delivered within 1 to 5 working days.</p>
-        </aside>
+      <aside>
+        <p>Now the most difficult part, actually creating the cheese. It is created in the following steps:
+        <ol>
+          <li>Acidification: the first step of making cheese is adding a starter culture. These are bacteria who turn
+            the sugar in the milk into lactic acid.</li>
+          <li>Coagulation: if the ph of the milk is low enough after the first step, the coalugant can be added to
+            solify the milk.</li>
+          <li>Cutting and seperating: it will now form curds and whey, the curds are cut in pieces and the whey is
+            seperated. </li>
+          <li>Aging: The cheese will be put to rest from a few weeks to a few months depending on how long that kind of
+            cheese needs to mature.</li>
+        </ol>
+        When a cheese is ready to be sold it well be packaged, added to our sellable inventory and show up on the
+        site.
+        </p>
+      </aside>
+    </div>
+    <div class="steptransition"></div>
+    <div class="step">
+      <div class="imagecircle">
+        <div class="imageicon"></div>
       </div>
+      <aside>
+        <p>After your order, the order will be packed the same day by our warehouse employees and then shipped with UPS.
+          Orders are delivered within 1 to 5 working days.</p>
+      </aside>
     </div>
   </div>
-
-
-    <div class="container">
-      <div id="aboutus">
-        <h1>About us</h1>
-        <div>
-          <h2>The Idea</h2>
-          <img src= "images/logo.png" alt="Cheese" height= "300px" width="300px"> </img>
-        </div>
-        <div>
-        <p>The Beiler Caseus is a very enthousiastic company looking to introduce dutch top quality dutch cheese to the American People.</p>
-        <p>When we scope in on the cheese market in the United States, we see that there is barely anyone taking advantage in this market. The average American eats a lot of cheese, but this consists mostly out of "fake" products. for example cheddar cheese, cheese balls and cheese spray.</p>  
-        <p>The Beiler Caseus wants to bring some change by introducing "luxury cheese" on the American Market. The American people Adore their "influencers" and by introducing a high end product on the market we want to change the social image of cheese.</p>
-        <p>The cheese from the Beiler Caseus is going to be made and produced in the Beilevaard, which is located in Drenthe, the Netherlands. After the production Process it will be shipped by UPS to America in Special pre-ripening containers.</p>
-        </div>
-       </div>
+  </div>
+  <div class="container">
+    <div id="aboutus">
+      <h1>About us</h1>
+      <div>
+        <h2>The Idea</h2>
+        <img src="images/logo.png" alt="Cheese" height="300px" width="300px"> 
+      </div>
+      <div>
+      <p>The Beiler Caseus is a very enthousiastic company looking to introduce dutch top quality dutch cheese to the American People.</p>
+      <p>When we scope in on the cheese market in the United States, we see that there is barely anyone taking advantage in this market. The average American eats a lot of cheese, but this consists mostly out of "fake" products. for example cheddar cheese, cheese balls and cheese spray.</p>  
+      <p>The Beiler Caseus wants to bring some change by introducing "luxury cheese" on the American Market. The American people Adore their "influencers" and by introducing a high end product on the market we want to change the social image of cheese.</p>
+      <p>The cheese from the Beiler Caseus is going to be made and produced in the Beilevaard, which is located in Drenthe, the Netherlands. After the production Process it will be shipped by UPS to America in Special pre-ripening containers.</p>
+      </div>
      </div>
-   
-   
-     <div class="container">
-       <div id = "theTeam">
-        <h2 id= "teamHeader">The Team</h2>
-
-      <!-- Meet the Team / jimmy-->
-         <div class = "teamCard">
-            <img src = "images/Jimmy.png" alt= "jimmy">
-          <div class = "teamContainer">
+   </div>
+  </div>
+  <div class="container">
+    <div id="theTeam">
+        <h2 id="teamHeader">The Team</h2>
+        <!-- Meet the Team / jimmy-->
+        <div class="teamCard">
+          <img src="images/Jimmy.png" alt="jimmy">
+          <div class="teamContainer">
             <h3>Jimmy</h3>
             <p class="teamTitle">Cheese Facility Officer</p>
             <p>ons meesterbrein</p>
@@ -207,12 +229,13 @@
 
         <!-- Meet the Team / Marijn-->
         <div class="teamCard">
-          <img src="images/Marijn.png" alt="Marijn">
+          <img src="images/smoel_cmo_marijn.jpg" title="Marijn van Aalst" alt="Marijn, our Cheese Marketing Officer">
           <div class="teamContainer">
-            <h3>Marijn</h3>
+            <h3>Marijn van Aalst</h3>
             <p class="teamTitle">Cheese Marketing Officer</p>
-            <p>ons finalcieel expert</p>
-            <p>meesterMarijn@baas.nl</p>
+            <p>Marijn is responsible for the marketing of The Beiler Caseus. He is the creative brain selling you our
+              cheese. If you are unpleased by our marketing please contact Marijn</p>
+            <p>marijnva@thebeilercaseus.com</p>
             <button>Contact</button>
           </div>
         </div>

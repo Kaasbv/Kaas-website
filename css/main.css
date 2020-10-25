@@ -41,6 +41,20 @@ textarea {
   resize: none;
 }
 
+#homeLogo{
+  width: 320px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1100px){
+  #homeLogo{
+    width: 50%;
+    padding-top: 70px;
+  }
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -230,6 +244,22 @@ nav > img {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1100px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .container::before {
+    left: 0px;
+  }
+
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 /************** Our Cheese **************/
 #our_cheese {
   overflow: hidden;
@@ -238,9 +268,11 @@ nav > img {
 
 #our_cheese h1 {
   margin-top: 50px;
+  text-align: center;
 }
 
-#our_cheese--left {
+
+#our_cheese--left{
   width: 45%;
   float: left;
 }
@@ -253,7 +285,7 @@ nav > img {
 #our_cheese--cheese {
   position: relative;
   border: 0px;
-  border-radius: 50%;
+  border-radius: 20px;
   margin: 50px;
   height: 400px;
   width: 400px;
@@ -261,7 +293,11 @@ nav > img {
   overflow: hidden;
 }
 
-.our_cheese--cheese--part {
+.our_cheese--block{
+  margin-bottom: 40px;
+}
+
+.our_cheese--cheese--part{
   position: absolute;
   border: 0px;
   height: 200px;
@@ -272,35 +308,111 @@ nav > img {
 
 .our_cheese--cheese--part:nth-child(1) {
   background-color: rgb(207, 170, 6);
-  top: 0px;
+  background-image: url(/images/golden_dutch.png);
+  background-position: left top;
+  background-size: 200%;
   left: 0px;
 }
 
-.our_cheese--cheese--part:nth-child(2) {
-  background-color: rgb(37, 34, 11);
+.our_cheese--cheese--part:nth-child(2){
+  background-color: rgb(182, 12, 12);
+  background-image: url(/images/old_beiler.png);
+  background-position: right top;
+  background-size: 200%;
   top: 0px;
   right: 0px;
 }
 
 .our_cheese--cheese--part:nth-child(3) {
   background-color: rgb(82, 165, 14);
+  background-image: url(/images/the_green_beiler.png);
+  background-position: right bottom;
+  background-size: 200%;
   bottom: 0px;
   right: 0px;
 }
 
 .our_cheese--cheese--part:nth-child(4) {
   background-color: rgb(117, 81, 2);
+  background-image: url(/images/the_brown_beiler.png);
+  background-position: left bottom;
+  background-size: 200%;
   bottom: 0px;
   left: 0px;
 }
 
 .our_cheese--slide {
   display: none;
+  overflow: hidden;
 }
 
+.our_cheese--slide img{
+  position: relative;
+  width: 300px;
+  border-radius: 10%;
+  float: left;
+}
+
+.our_cheese--slide .info{
+  position: relative;
+  float: right;
+  width: 60%;
+}
+
+.our_cheese--slide.current_slide{
+  position: relative;
+  margin-top: 20px;
+  padding: 4%;
+  width: 100%;
+  color: var(--dark-shades);
+  background-color: var(--main-brand);
+  border-radius: 20px;
+  display: block;
+}
+
+@media only screen and (max-width: 1100px){
+  #our_cheese--left{
+    width: 100%;
+  }
+  
+  #our_cheese--right{
+    width: 100%;
+  }
+  #our_cheese--cheese{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .our_cheese--cheese--part{
+    width: 150px;
+    height: 150px;
+  }
+
+  .our_cheese--block{
+    margin-bottom: 0px;
+  }
+
+  .our_cheese--slide h3{
+    text-align: center;
+  }
+
+  .our_cheese--slide img{
+    width: 200px;
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .our_cheese--slide .info{
+    float: none;
+    width: 100%;
+  }
+}
 /*exit**************our_cheese***************/
 
-#Home {
+#Home{
   background-image: url(/images/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;

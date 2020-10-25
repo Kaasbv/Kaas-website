@@ -10,7 +10,7 @@ function initfaq(){
 function toggleFaq(event){
     var clickedButton = event.target;
     var section = clickedButton.nextElementSibling;
-    clickedButton.classList.toggle("active");
+    clickedButton.classList.toggle("faqActive");
     console.log(section.style.maxHeight)
 
     if (parseInt(section.style.maxHeight) !== 0 && section.style.maxHeight.length !== 0)  {

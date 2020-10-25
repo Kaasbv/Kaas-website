@@ -340,7 +340,9 @@ nav > ul > li > a:hover {
   overflow: hidden;
 }
 
-
+#teamHeader{
+  margin-left: 10px;
+}
 
 .teamTitle {
   color: grey;
@@ -450,7 +452,7 @@ width: 75%;
 border-style: none;
 }
 
-.active, .faqCollapse:hover {
+.faqActive, .faqCollapse:hover {
   background-color: var(--light-accent);
   border-style: solid;
 }

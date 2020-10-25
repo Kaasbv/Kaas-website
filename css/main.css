@@ -43,44 +43,116 @@ textarea {
 
 nav {
   position: fixed;
-  width: 100vw;
-  margin-top: 0px;
+  width: 100%;
   height: 6vh;
   display: block;
   transition: background 0.5s;
   z-index: 2000;
 }
 
-nav > ul {
-  top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 6vh;
-  padding: 0px;
-  list-style-type: none;
-  background-color: transparent;
-}
-
-nav > ul > li {
+#menu-logo {
+  position: relative;
+  display: block;
+  padding: 5px;
+  margin: 0px;
+  height: 100%;
   float: left;
 }
 
-nav > ul > li > a {
+
+
+nav > ul {
+  position: relative;
+  margin: 0px;
+  display: inline-block;
+  width: max-content;
+  padding: 0px;
+  height: 100%;
+  list-style-type: none;
+}
+
+#menu-links > li {
+  float: left;
+}
+
+#menu-icons {
+  position: relative;
+  height: 6vh;
+  float: right;
+  margin-right: 10px;
+}
+
+#menu-icons > * {
+  position: relative;
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav > img {
+  display: none;
+}
+
+#menu-links > li > a {
   display: block;
+  line-height: 6vh;
+  padding-left: 10px;
+  padding-right: 10px;
   color: var(--dark-shades);
   font-weight: bold;
   text-align: center;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+#menu-links > li > a:hover {
   background-color: #f3efe4;
-  padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+  nav {
+    background-color: var(--dark-accent-opacity);
+  }
+
+  nav > ul {
+    width: auto;
+  }
+
+  #menu-links {
+    display: none;
+  }
+
+  #menu-links li {
+    text-align: center;
+    background-color: var(--dark-accent-opacity);
+    overflow: hidden;
+    float: left;
+    border-top: 1px solid black;
+    width: 100%;
+  }
+
+  #menu-icon {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    padding: 5px;
+    height: 100%;
+    width: 5vh;
+    display: block;
+  }
+
+  #menu-icons {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    margin: 0px;
+  }
+
+  #menu-logo {
+    margin: auto;
+    float: none;
+  }
+}
+
 
 .container {
   position: relative;

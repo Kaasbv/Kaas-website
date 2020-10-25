@@ -610,6 +610,9 @@ form > input[type="submit"]:hover {
   height: 60px;
 }
 
+.card select {
+  width: 80%;
+}
 
 
 .title {

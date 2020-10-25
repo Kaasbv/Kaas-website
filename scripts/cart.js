@@ -20,10 +20,10 @@ const products = [
     description: "Golden Dutch: an everyday cheese that tastes how cheese should taste.",
     desciptionPoints: ["5 months old", "Firm", "Buttery", "Smooth"],
     variants: [
-      {name: "1 kg", price: 40, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kg", price: 80, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 150, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 275, kilo: 12},
     ],
     image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
   },
@@ -267,8 +267,8 @@ function renderCatalogOptions(variants){//render de variant array van de product
   var count = 0;
   const kiloToPounds = 2.2046226218;
   for(var variant of variants){
-    let pounds = (variant.kilo * kiloToPounds).toFixed(2);
-    html += `<option value="${count++}">${variant.name} (± ${pounds}lb) - ${variant.price} $</option>`;
+    let pounds = (variant.kilo * kiloToPounds).toFixed(1);
+    html += `<option value="${count++}">$ ${variant.price} - ${variant.name} (± ${pounds}lb) </option>`;
   }
   return html;
 }

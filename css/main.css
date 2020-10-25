@@ -233,6 +233,11 @@ nav > img {
 /************** Our Cheese **************/
 #our_cheese {
   overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#our_cheese h1 {
+  margin-top: 50px;
 }
 
 #our_cheese--left {
@@ -313,6 +318,9 @@ nav > img {
 }
 
 /************** How it's made **********/
+#howItsMade h1{
+  padding:50px
+}
 
 .step {
   position: relative;
@@ -414,6 +422,8 @@ nav > img {
 
 #teamHeader{
   margin-left: 10px;
+  width:100%;
+  margin-top:50px;
 }
 
 .teamTitle {
@@ -469,32 +479,33 @@ nav > img {
 
 /************** About us pagina **********/
 
-.aboutus h1 {
+#aboutus h1 {
   padding: 10px;
   text-align: center;
 }
 
-.aboutus p {
+#aboutus p {
   width: 600px;
 }
 
-.aboutus img {
+#aboutus img {
   float: right;
+  filter: invert(1);
 }
 
-.aboutus {
+#aboutus {
   overflow: hidden;
   margin-bottom: 100px;
   padding: 10px;
 }
 
 @media screen and (max-width:600px){
-  .aboutus img {
+  #aboutus img {
     display: none;
   }
 }
 
-@media screen and (max-width:600px){ .aboutus div
+@media screen and (max-width:600px){ #aboutus div
   {
     display: flex;
     flex-wrap:wrap;
@@ -664,6 +675,7 @@ footer {
 
 .text-center {
   text-align: center;
+  padding: 50px;
 }
 
 #copy {
@@ -701,6 +713,7 @@ footer {
 }
 
 /* Contact Us */
+
 
 .zoom ul {
 clear: both;

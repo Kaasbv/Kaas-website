@@ -79,7 +79,7 @@ nav > ul {
   position: relative;
   height: 6vh;
   float: right;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 #menu-icons > * {
@@ -110,7 +110,7 @@ nav > img {
 
 @media screen and (max-width: 1100px) {
   nav {
-    background-color: var(--dark-accent);
+    background-color: var(--dark-accent-opacity);
   }
 
   nav > ul {
@@ -123,7 +123,7 @@ nav > img {
 
   #menu-links li {
     text-align: center;
-    background-color: var(--dark-accent);
+    background-color: var(--dark-accent-opacity);
     overflow: hidden;
     float: left;
     border-top: 1px solid black;

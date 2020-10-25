@@ -101,11 +101,11 @@ nav > ul > li > a:hover {
   display: block;
 }
 
-.container:nth-child(4)::before {
+.container:nth-child(4)::before, .container:nth-child(7)::before {
   background-color: var(--light-shades);
   color: var(--dark-shades);
 }
-.container:nth-child(4) {
+.container:nth-child(4), .container:nth-child(7) {
   padding-top: 20px;
   color: var(--dark-shades);
 }

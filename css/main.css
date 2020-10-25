@@ -6,6 +6,22 @@
   display: block;
 }
 
+@media screen and (max-width: 1100px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .container::before {
+    left: 0px;
+  }
+
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 
 /************** How it's made **********/
 
@@ -98,6 +114,7 @@
 
 /************** Meet the Team **********/
 
+
 #theTeam {
   padding:10px;
   display: flex; 
@@ -115,7 +132,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px; 
-  float:left;
   width: 200px; 
   margin-bottom: 15px;
   margin-right: 10px; 
@@ -150,6 +166,13 @@
   background-color: black;
 }
 
+@media screen and (max-width:496px){
+  .teamCard{
+  width: 100%; 
+  display: block;
+}
+}
+
 /************** About us pagina **********/
 
 .aboutus h1{
@@ -168,6 +191,21 @@
 .aboutus {
   margin-bottom: 100px;
   padding: 10px;
+}
+
+@media screen and (max-width:600px){
+  .aboutus img {
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px){ .aboutus div
+  {
+    display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+
+  }
 }
 
 /********** FAQ *********/

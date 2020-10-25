@@ -13,3 +13,30 @@ function updateMenu(){
     schrinked = false;
   }
 }
+
+
+window.addEventListener("load", initMenu);
+
+function initMenu(){
+  let button = document.querySelector("#menu-icon");
+  let menu =  document.querySelector("#menu-links");
+
+  button.addEventListener("click", function (){
+    if(menu.style.display === "none" || !menu.style.display){
+      menu.style.display = "block";
+    }else{
+      menu.style.display = "none";
+    }
+  });
+
+}
+
+function mailFunction() {
+  alert("You signed up for the newsletter");
+}
+
+function show_alert() 
+{
+  alert("Form submitted");
+}
+

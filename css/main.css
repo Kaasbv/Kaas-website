@@ -14,6 +14,10 @@
   --dark-shades: #2B332E;
 }
 
+.container h1 {
+  text-align: center;
+}
+
 .flip-cards {
   display: flex;
   justify-content: space-evenly;

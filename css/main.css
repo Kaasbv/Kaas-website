@@ -879,6 +879,8 @@ footer {
   background-color: var(--dark-shades);
   color: var(--light-shades);
   transform: rotateY(180deg);
+}
+
 .text-center {
   text-align: center;
   padding: 50px;

@@ -853,13 +853,14 @@ footer {
   justify-content: space-evenly;
   padding: 0 100px;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .flip-card {
   background-color: transparent;
   width: 250px;
+  margin-bottom: 50px;
   height: 400px;
   perspective: 1000px;
   display: flex;

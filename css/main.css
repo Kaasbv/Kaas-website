@@ -206,11 +206,11 @@ nav > img {
   display: block;
 }
 
-.container:nth-child(4)::before, .container:nth-child(7)::before {
+.container:nth-child(4)::before, .container:nth-child(8)::before {
   background-color: var(--light-shades);
   color: var(--dark-shades);
 }
-.container:nth-child(4), .container:nth-child(7) {
+.container:nth-child(4), .container:nth-child(8) {
   padding-top: 20px;
   color: var(--dark-shades);
 }
@@ -836,6 +836,8 @@ footer {
   justify-content: space-evenly;
   padding: 0 100px;
   flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .flip-card {
@@ -844,7 +846,6 @@ footer {
   height: 400px;
   perspective: 1000px;
   display: flex;
-  float: left;
   padding: 5px;
 }
 

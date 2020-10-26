@@ -54,23 +54,11 @@ textarea {
   resize: none;
 }
 
-#homeLogo{
-  width: 320px;
-  position: relative;
-  display: block;
-  margin: auto;
-}
 
 .shrinked-menu #menu-logo {
   display: block;
 }
 
-@media only screen and (max-width: 1100px){
-  #homeLogo{
-    width: 50%;
-    padding-top: 70px;
-  }
-}
 
 nav {
   position: fixed;
@@ -141,19 +129,19 @@ nav > img {
   #menu-logo {
     display: block;
   }
-
+  
   nav {
     background-color: var(--dark-accent-opacity);
   }
-
+  
   nav > ul {
     width: auto;
   }
-
+  
   #menu-links {
     display: none;
   }
-
+  
   #menu-links li {
     text-align: center;
     background-color: var(--dark-accent-opacity);
@@ -162,7 +150,7 @@ nav > img {
     border-top: 1px solid black;
     width: 100%;
   }
-
+  
   #menu-icon {
     position: absolute;
     left: 5px;
@@ -172,14 +160,14 @@ nav > img {
     width: 5vh;
     display: block;
   }
-
+  
   #menu-icons {
     position: absolute;
     right: 5px;
     top: 0px;
     margin: 0px;
   }
-
+  
   #menu-logo {
     margin: auto;
     float: none;
@@ -227,6 +215,31 @@ nav > img {
   left: calc(((100vw - 1100px) / 2) * -1);
 }
 
+#Home{
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+#homeLogo{
+  width: 320px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1100px){
+  #Home{
+    padding-top: 15vh;
+  }
+
+  #homeLogo{
+    width: 220px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .container{
     width: 100%;
@@ -236,7 +249,7 @@ nav > img {
   .container::before {
     left: 0px;
   }
-
+  
   footer {
     width: 100%;
     overflow: hidden;
@@ -430,19 +443,6 @@ nav > img {
   }
 }
 /*exit**************our_cheese***************/
-
-#Home{
-  background-image: url(/images/landing.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-#Our-Cheese {
-  background-image: url(/images/ourcheese.jpg);
-  background-size: cover;
-  height: 100vh;
-}
 
 #logo {
   margin: 6px;

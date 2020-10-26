@@ -16,6 +16,6 @@ function toggleFaq(event){
     if (parseInt(section.style.maxHeight) !== 0 && section.style.maxHeight.length !== 0)  {
         section.style.maxHeight = 0 + "px";
     } else {
-        section.style.maxHeight = 100 + "px";
+        section.style.maxHeight = 200 + "px";
     }
 }

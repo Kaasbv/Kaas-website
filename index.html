@@ -401,23 +401,23 @@
           </ul>
         </div>
       </div>
-
-      <div class="column">
-        <section>
-          <form onsubmit="return checkEmail(this)">
-            <label for="name">First Name:</label><br>
-            <input type="text" name="fname" placeholder="Your Name"><br>
-            <label for="email">Last Name:</label><br>
-            <input type="text" name="lname" placeholder="Your Last Name"><br>
-            <label for="phone">Email:</label><br>
-            <input type="text" name="email" id="required" placeholder="Your E-mail Adress"><br>
-            <label for="message">Message:</label><br>
-            <textarea type="text" placeholder="Your message to us" rows="10" cols="50"></textarea><br>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
-      </div>
-    </div>
+        
+        <div class="column">
+          <section>
+            <form target="contactUs" method="POST" target="_blank"  onsubmit="return checkEmail(this)">
+              <label for="fname">First Name:</label><br>
+              <input type="text" name="fname" placeholder="Your Name" required><br>
+              <label for="lname">Last Name:</label><br>
+              <input type="text" name="lname" placeholder="Your Last Name" required><br>
+              <label for="email">Email:</label><br>
+              <input type="email" name="email" placeholder="Your E-mail Adress" required><br>
+              <label for="message">Message:</label><br>
+              <textarea type="text" placeholder="Your message to us" rows="10" cols="50" required></textarea><br>
+              <input type="submit" value="Submit"> 
+            </form>
+          </section>
+        </div> 
+    </div> 
   </div>
   <footer>
     <div id="footer-logo">
@@ -429,7 +429,6 @@
       <a href="#howItsMade">How it's Made</a>
       <a href="#aboutus">About Us</a>
       <a href="./cart.html">Shop</a>
-      <a href="./index.html">Profile</a>
       <a href="./faq.html">FAQ</a>
     </div>
     <div class="wrapper2">

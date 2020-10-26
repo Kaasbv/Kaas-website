@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kaas website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="scripts/cart.js"></script>
+    <script>
+      window.addEventListener("load", renderCart);
+    </script>
+  </head> 
+  <body class="single-page">
+    <div class="container">
+      <h1>Cart</h1>
+      <div id="cart-items"></div>
+      <div id="cart-summary">
+        <p>
+          Total: <span id="cart-total"></span><br>
+          Shipping costs: 0$
+        </p>
+      </div>
+      <button class="button" id="cart-checkout">Check Out</button>
+    </div>
+  </body>
+</html>

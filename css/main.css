@@ -877,6 +877,7 @@ footer {
   background-color: var(--light-shades);
   color: var(--dark-shades);
   transform: rotateY(180deg);
+  padding: 15px;
 }
 
 

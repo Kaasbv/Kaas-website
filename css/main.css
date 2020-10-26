@@ -14,6 +14,13 @@
   --dark-shades: #2B332E;
 }
 
+.flip-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  flex-wrap: wrap;
+}
+
 .flip-card {
   background-color: transparent;
   width: 250px;
@@ -22,7 +29,6 @@
   display: flex;
   float: left;
   padding: 5px;
-
 }
 
 .flip-card-inner {

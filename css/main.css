@@ -826,10 +826,7 @@ footer {
   display: block;
 }
 
-
-.container h1 {
-  text-align: center;
-}
+/* Best sellers */
 
 .flip-cards {
   display: flex;
@@ -856,7 +853,7 @@ footer {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 var(--dark-shades);
+  box-shadow: 0 4px 6px 0 var(--light-shades);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -873,14 +870,15 @@ footer {
 
 .flip-card-front {
   background-color: var(--light-shades);
-  color: var(--dark-shades);
+  color: var(--light-shades);
 }
 
 .flip-card-back {
-  background-color: var(--dark-shades);
-  color: var(--light-shades);
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
   transform: rotateY(180deg);
 }
+
 
 .text-center {
   text-align: center;

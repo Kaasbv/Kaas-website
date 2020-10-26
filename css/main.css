@@ -208,11 +208,11 @@ nav > img {
   display: block;
 }
 
-.container:nth-child(4)::before, .container:nth-child(7)::before {
+.container:nth-child(4)::before, .container:nth-child(6)::before, .container:nth-child(8)::before {
   background-color: var(--light-shades);
   color: var(--dark-shades);
 }
-.container:nth-child(4), .container:nth-child(7) {
+.container:nth-child(4), .container:nth-child(6), .container:nth-child(8) {
   padding-top: 20px;
   color: var(--dark-shades);
 }
@@ -845,6 +845,62 @@ footer {
   height: 650px;
   display: block;
 }
+
+/* Best sellers */
+
+.flip-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  margin-bottom: 50px;
+  height: 400px;
+  perspective: 1000px;
+  display: flex;
+  padding: 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 6px 0 var(--light-shades);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: var(--light-shades);
+  color: var(--light-shades);
+}
+
+.flip-card-back {
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+  transform: rotateY(180deg);
+  padding: 15px;
+}
+
 
 .text-center {
   text-align: center;

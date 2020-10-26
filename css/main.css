@@ -969,6 +969,9 @@ form > input[type="submit"]:hover {
   .column {
     width: 100%;  
   }
+  .column textarea {
+    max-width: 300px;    
+  }
 }
 
 

@@ -590,9 +590,8 @@ nav > img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px; 
-  width: 220px; 
-  margin-bottom: 15px;
-  margin-right: 10px;
+  width: 250px; 
+  margin: 10px  
   
 }
 .teamCard img {

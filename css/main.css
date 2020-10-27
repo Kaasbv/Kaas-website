@@ -262,6 +262,7 @@ nav > img {
   position: relative;
   top: 80vh;
   display: block;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -1071,4 +1072,76 @@ form > input[type="submit"]:hover {
   background-color: var(--light-accent);
   color: var(--dark-shades);
   cursor: pointer;
+}
+
+.card {
+  float: left;
+  margin: 10px;
+  position: relative; 
+  box-shadow: 0 4px 8px 0 black;
+  max-width: 345px;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+}
+
+.card h1 {
+  height: 60px;
+}
+
+.card select {
+  width: 80%;
+}
+
+
+.title {
+height: 175px;
+text-align: left;
+
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.price {
+  color: var(--dark-shades);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--light-shades);
+  background-color: var(--dark-accent);
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.card button:hover {
+  background-color: var(--light-accent);
+}
+
+.card button:active {
+  background-color: var(--main-brand);
+  box-shadow: var(--light-accent);
+}
+
+#catalog-header {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+#catalog-cards{
+  overflow: hidden;
+  padding-bottom: 100px;
 }

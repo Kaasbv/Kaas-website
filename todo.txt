@@ -1,0 +1,5 @@
+- Menu op pagina's
+- margins fixen
+- Menu sluiten als je ergens op klikt
+- Logo klikt naar home 
+- Cart mobiel maken

@@ -13,107 +13,136 @@ Sla alle producten op in een array van objecten. Elk item in deze array heeft de
 name, description, prices en image.
 */
 
+
 const products = [
   {
-    name: "Kaas1",
-    description: "Dit is kaas1",
-    title: "",
+    name: "Golden dutch",
+    description: "Golden Dutch: an everyday cheese that tastes how cheese should taste.",
+    desciptionPoints: ["5 months old", "Firm", "Buttery", "Smooth"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 30, kilo: 1},
+      {name: "3 kg", price: 80, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 150, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 275, kilo: 12},
     ],
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/goldendutch.png"
   },
   {
-    name: "Kaas2",
-    description: "Dit is de kaas2",
-    title: "",
+    name: "Old Beiler",
+    description: "Old Beiler: a cheese for special evenings.",
+    desciptionPoints: ["16 months old", "Hard", "Strong-bodied", "Complex"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 60, kilo: 1},
+      {name: "3 kg", price: 150, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 275, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 475, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/oldbeiler.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Brown Beiler",
+    description: "The Brown Beiler: A nutty cheese.",
+    desciptionPoints: ["4 months old", "Soft", "Creamy"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 35, kilo: 1},
+      {name: "3 kg", price: 85, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 300, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/thebrownbeiler.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Green Beiler",
+    description: "The Green Beiler: An old Cheese with rich tones of basil",
+    desciptionPoints: ["12 months old", "Hard", "Salty with fresh tones", "Balanced"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/thegreenbeiler.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Red Beiler",
+    description: "The Red Beiler: a semi-muture cheese",
+    desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 40, kilo: 1},
+      {name: "3 kg", price: 100, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 325, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/theredbeiler.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
-    title: "",
+    name: "The Oaker Beiler",
+    description: "The Oaker Beiler: a Cheese smoked with oak-wood",
+    desciptionPoints: [],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 35, kilo: 1},
+      {name: "3 kg", price: 85, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 300, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/theoakerbeiler.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
+    name: "The Beiler Duchess",
+    description: "The Beiler Duchess: a honey cheese with special selected herbs",
+    desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 45, kilo: 1},
+      {name: "3 kg", price: 115, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 210, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 375, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/thebeilerduchess.png"
   },
   {
-    name: "Kaas1",
-    description: "Lorim upsim",
+    name: "Young Beiler",
+    description: "Young Beiler: Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
-      {name: "1 kilo", price: 30},
-      {name: "3 kilo", price: 80},
-      {name: "Halve wiel - avg. 6 kilo", price: 150},
-      {name: "Heel wiel - avg. 12 kilo", price: 275},
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
     ],
     
-    image: "https://media.nu.nl/m/un2xpm3ag029_wd1280.jpg/steeds-minder-gaten-in-kaas-schone-melk.jpg"
+    image: "images/products/youngbeiler.png"
+  },
+  {
+    name: "Young Beiler (lean)",
+    description: "Young Beiler (lean): Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
+    variants: [
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
+    ],
+    
+    image: "images/products/youngbeilerlean.png"
+  },
+  {
+    name: "Young Beiler (less salt)",
+    description: "Young Beiler (less salt): Young cheese",
+    desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
+    variants: [
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
+    ],
+    
+    image: "images/products/youngbeilerlsalt.png"
   },
 ];
 
@@ -191,6 +220,66 @@ function getVariantFromCart(productId, variantId){
   }
 
   return false; //Als de loop is doorlopen (niks gevonden) return false;
+}
+
+function renderCatalog(){
+  var html = "";
+  var count = 0;
+
+  for(var product of products){//Loop door alle producten heen
+    html += `
+    <div data-id="${count++}" class="card">
+      <img src="${product.image}">
+      <h1>${product.name}</h1>
+      <p class="title">
+        ${product.description}
+        ${renderCatalogPoints(product.desciptionPoints)}
+      </p>
+        <label for="weight">Choose the amount:</label>
+        <select name="weight" id="weight">
+          ${renderCatalogOptions(product.variants)}
+        </select>
+        <button class="catalog-button">Add to cart</button>
+    </div>` //Voeg een volledige cart html toe aan de html variable
+  }
+
+  document.querySelector("#catalog-cards").innerHTML = html; //Zet de html in de parent
+  setCatalogEvents(); //run de catalog events functie zodat de addToCart button werkt
+}
+
+function setCatalogEvents(){
+  var buttons = document.querySelectorAll(".catalog-button"); //verkrijg alle catalog buttons
+
+  for(var button of buttons){//Loopt door alle button elementen
+    button.addEventListener("click", catalogCartEvent); //Zet een click event
+  }
+}
+
+function catalogCartEvent(event){
+  let cardElement = event.target.parentElement; //verkrijg de html parent namelijk de card div
+  let select = cardElement.querySelector("select"); //Verkrijg het select html element
+  let productId = cardElement.dataset.id; //Verkrijg het id van de data attribute
+  //add to cart
+  addToCart(productId, select.value); //voeg het product toe met variant aan de cart op basis van de value van de select
+}
+
+function renderCatalogOptions(variants){//render de variant array van de products
+  var html = "";
+  var count = 0;
+  const kiloToPounds = 2.2046226218;
+  for(var variant of variants){
+    let pounds = (variant.kilo * kiloToPounds).toFixed(1);
+    html += `<option value="${count++}">$ ${variant.price} - ${variant.name} (± ${pounds}lb) </option>`;
+  }
+  return html;
+}
+
+function renderCatalogPoints(pointsArray){//render de catalog points op basis van de descriptionPoints
+  var html = "<br>"; 
+  for(var point of pointsArray){
+    html += `・ ${point} <br>`;
+  }
+  return html;
 }
 
 function setEvents(){

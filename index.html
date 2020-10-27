@@ -13,6 +13,8 @@
     content="Get the best cheese delivered at your doorstep with cheese from The Beiler Caseus. With free shipping, we deliver the most popular cheese in the US. Right from the green meadows of the Netherlands.">
   <script src="scripts/cart.js"></script>
   <script src="scripts/main.js"></script>
+  <script src="scripts/jumbotron.js"></script>
+  <script src="scripts/ourCheese.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <!--LINK FONT HERE-->
 
@@ -22,16 +24,16 @@
 <body>
   <nav>
     <img id="menu-icon" src="/images/icons8-menu-52.png">
-    <img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
+    <a href="/index.html"><img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
     <ul id="menu-links">
       <li><a href="#our_cheese">Our Cheese</a></li>
       <li><a href="#howItsMade">How it's made</a></li>
       <li><a href="#aboutus">About us</a></li>
       <li><a href="#contactUs">Contact</a></li>
-      <li><a href="#">Catalog</a></li>
+      <li><a href="/catalog.html">Catalog</a></li>
     </ul>
     <div id="menu-icons">
-      <a href="/cart.html"><img id="menu-shopping" src="/images/shoppingcart.png" height="32px" width="32px"></a>
+      <a href="/cart.html"><img id="menu-shopping" src="/images/shoppingcart.png"></a>
     </div>
   </nav>
   <div class="containerhome" id="Home">
@@ -208,7 +210,7 @@
       <h1>About us</h1>
       <div>
         <h2>The Idea</h2>
-        <img src="images/logo.png" alt="Cheese" height="300px" width="300px">
+        <a href="/index.html"><img src="images/logo.png" alt="Cheese" height="300px" width="300px"></a>
       </div>
       <div>
         <p>The Beiler Caseus is a very enthousiastic company looking to introduce dutch top quality dutch cheese to the
@@ -231,87 +233,88 @@
       <h2 id="teamHeader">The Team</h2>
       <!-- Meet the Team / jimmy-->
       <div class="teamCard">
-        <img src="images/Jimmy.png" alt="jimmy">
+        <img src="images/teammembers/jimmy.jpg" alt="jimmy">
         <div class="teamContainer">
           <h3>Jimmy</h3>
           <p class="teamTitle">Cheese Facility Officer</p>
-          <p>ons meesterbrein</p>
-          <p>meesterjimmy@baas.nl</p>
-          <button>Contact</button>
+
+          <p>Is responsible for the location and the working of the machines.</p>
+          <p>jimmy@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Jimmy@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
       <!-- Meet the Team / Marijn-->
       <div class="teamCard">
-        <img src="images/smoel_cmo_marijn.jpg" title="Marijn van Aalst" alt="Marijn, our Cheese Marketing Officer">
+        <img src="images/teammembers/smoel_cmo_marijn.jpg" title="Marijn van Aalst" alt="Marijn, our Cheese Marketing Officer">
         <div class="teamContainer">
           <h3>Marijn van Aalst</h3>
           <p class="teamTitle">Cheese Marketing Officer</p>
           <p>Marijn is responsible for the marketing of The Beiler Caseus. He is the creative brain selling you our
             cheese. If you are unpleased by our marketing please contact Marijn</p>
           <p>marijnva@thebeilercaseus.com</p>
-          <button>Contact</button>
+          <a class="teamButton" href= "mailto:Marijn@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
       <!-- Meet the Team / Nash-->
       <div class="teamCard">
-        <img src="images/Nash.png" alt="Nash">
+        <img src="images/teammembers/Nash.png" alt="Nash">
         <div class="teamContainer">
           <h3>Nash</h3>
           <p class="teamTitle">Cheese HR Officer</p>
           <p> oUr PeOpLe pErSon</p>
-          <p>meesterNash@baas.nl</p>
-          <button>Contact</button>
+          <p>nash@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Nash@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
       <!-- Meet the Team / Nassim -->
       <div class="teamCard">
-        <img src="images/Nassim.png" alt="Nassim">
+        <img src="images/teammembers/nassim.jpg" alt="Nassim">
         <div class="teamContainer">
           <h3>Nassim</h3>
           <p class="teamTitle">Cheese Financial Officer</p>
-          <p> $$$$$$$</p>
-          <p>meesterNassim@baas.nl</p>
-          <button>Contact</button>
+          <p>Responsible for the flow of money.</p>
+          <p>nassim@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Nassim@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
 
       <!-- Meet the Team / Stephan -->
       <div class="teamCard">
-        <img src="images/Stephan.png" alt="Stephan">
+        <img src="images/teammembers/stephan.jpg" alt="Stephan">
         <div class="teamContainer">
           <h3>Stephan</h3>
           <p class="teamTitle">Cheese Logistics Officer</p>
-          <p> man man man man</p>
-          <p>meesterStephan@baas.nl</p>
-          <button>Contact</button>
+          <p>Stephan is responsible for the organization and implementation of the operational activities. He'll make sure you will get your cheese on time!</p>
+          <p>stephan@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Stephan@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
       <!-- Meet the Team / Burak-->
       <div class="teamCard">
-        <img src="images/Burak.png" alt="Burak">
+        <img src="images/teammembers/burak.jpg" alt="Burak">
         <div class="teamContainer">
           <h3>Burak</h3>
           <p class="teamTitle">Cheese Executive Officer</p>
-          <p> Baas man</p>
-          <p>meesterbaas@baas.nl</p>
-          <button>Contact</button>
+          <p>Runs the company</p>
+          <p>burak@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Burak@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
       <!-- Meet the Team / Auke -->
       <div class="teamCard">
-        <img src="images/Auke.png" alt="Auke">
+        <img src="images/teammembers/Auke.png" alt="Auke">
         <div class="teamContainer">
           <h3>Auke</h3>
           <p class="teamTitle">Cheese IT Officer</p>
           <p> Computer man</p>
-          <p>meesterAuke@baas.nl</p>
-          <button class="teamButton">Contact</button>
+          <p>auke@thebeilercaseus.com</p>
+          <a class="teamButton" href= "mailto:Jimmy@thebeilercaseus.com">contact</a>
         </div>
       </div>
 
@@ -323,7 +326,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img alt="Avatar" src="https://beemsterkaas.nl/wp-content/uploads/2020/02/jong-30-1.png">
+            <img alt="Avatar" src="images/products/goldendutchbestseller.png">
           </div>
           <div class="flip-card-back">
             <h1>Golden Dutch</h1>
@@ -336,7 +339,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://beemsterkaas.nl/wp-content/uploads/2017/10/BEEMSTER_30_JONGBELEGEN-Sfeer-e1582533575107.png" alt="Avatar">
+            <img src="images/products/thebrownbeilerbestseller.png" alt="Avatar">
           </div>
           <div class="flip-card-back">
             <h1>The Brown Beiler</h1>
@@ -349,7 +352,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://beemsterkaas.nl/wp-content/uploads/2017/10/BeemsterNL_EXTRA-OUD_fotografie-website_1080x754_02.jpg" alt="Avatar">
+            <img src="images/products/oldbeilerbestseller.png" alt="Avatar">
           </div>
           <div class="flip-card-back">
             <h1>Old Beiler</h1>
@@ -399,19 +402,19 @@
         
         <div class="column">
           <section>
-            <form target="contactUs" method="POST" target="_blank"  onsubmit="return checkEmail(this)">
+            <form target="contactUs" method="POST" target="_blank" onsubmit="return checkEmail(this)">
               <label for="fname">First Name:</label><br>
               <input type="text" name="fname" placeholder="Your Name" required><br>
               <label for="lname">Last Name:</label><br>
               <input type="text" name="lname" placeholder="Your Last Name" required><br>
               <label for="email">Email:</label><br>
-              <input type="email" name="email" placeholder="Your E-mail Adress" required><br>
+              <input type="text" name="email" placeholder="Your E-mail Adress" required><br>
               <label for="message">Message:</label><br>
               <textarea type="text" placeholder="Your message to us" rows="10" cols="50" required></textarea><br>
               <input type="submit" value="Submit"> 
             </form>
           </section>
-        </div> 
+        </div>
     </div> 
   </div>
   <footer>
@@ -423,7 +426,7 @@
       <a href="#our_cheese">Our Cheese</a>
       <a href="#howItsMade">How it's Made</a>
       <a href="#aboutus">About Us</a>
-      <a href="./cart.html">Shop</a>
+      <a href="./cart.html">Cart</a>
       <a href="./faq.html">FAQ</a>
       <a href="./sitemap.html">Sitemap</a>
     </div>
@@ -438,7 +441,7 @@
         Kaasstad
       </div>
       <div>
-        TheBeilerCheese@gmail.com
+        info@thebeilercaseus.com
       </div>
     </div>
     <div class="wrapper3">

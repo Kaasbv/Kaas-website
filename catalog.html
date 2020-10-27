@@ -12,20 +12,14 @@
       content="Get the best cheese delivered at your doorstep with cheese from The Beiler Caseus. With free shipping, we deliver the most popular cheese in the US. Right from the green meadows of the Netherlands.">
     <script src="scripts/cart.js"></script>
     <script src="scripts/main.js"></script>
-    <script>
-      window.addEventListener("load", renderCart);
-    </script>
-  
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <!--LINK FONT HERE-->
-  
     <link rel="shortcut icon" href="images/favicon1.0.png" type="image/png">
-  </head> 
-  <body class="single-page">
-    <nav class= "shrinked-menu">
+    <script>window.addEventListener("load", renderCatalog);</script>
+  </head>
+  <body>
+    <nav class="shrinked-menu">
       <img id="menu-icon" src="/images/icons8-menu-52.png">
-      <img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
+      <a href="/index.html"><img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
       <ul id="menu-links">
         <li><a href="/index.html#our_cheese">Our Cheese</a></li>
         <li><a href="/index.html#howItsMade">How it's made</a></li>
@@ -38,24 +32,13 @@
         <a href="/cart.html"><img id="menu-shopping" src="/images/shoppingcart.png" height="32px" width="32px"></a>
       </div>
     </nav>
-
     <div class="container">
-      <div id="cartPage">
-        <h1>Cart</h1>
-        <div id="cart-items"></div>
-        <div id="cart-summary">
-          <p>
-            Total: <span id="cart-total"></span><br>
-            Shipping costs: 0$
-          </p>
-        </div>
-        <button class="button" id="cart-checkout">Check Out</button>
-      </div>
+      <h1 id="catalog-header">Catalog</h1>
+      <div id="catalog-cards"></div>
     </div>
-    
     <footer>
       <div id="footer-logo">
-        <a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" ></a>
+        <a href="/index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" ></a>
       </div>
       <div class="wrapper1">
         <a href="/index.html">Home</a>
@@ -87,6 +70,6 @@
         <button id="newsletter" onclick="mailFunction()">Sign me up please!</button>
       </div>
       <div id="copy">©TheBeilerCheese</div>
-    </footer>
+    </footer> 
   </body>
 </html>

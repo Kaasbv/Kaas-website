@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Cardo', sans-serif;
   padding: 0;
   background: var(--dark-shades);
   color: var(--light-shades);
@@ -69,6 +72,8 @@ nav {
   z-index: 2000;
 }
 
+
+
 #menu-logo {
   position: relative;
   display: none;
@@ -96,14 +101,18 @@ nav > ul {
   position: relative;
   height: 6vh;
   float: right;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+#menu-icons img {
+  height: 6vh;
+  width: 6vh;
+  padding: 1vh;
 }
 
 #menu-icons > * {
   position: relative;
   float: left;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 nav > img {
@@ -194,11 +203,11 @@ nav > img {
   display: block;
 }
 
-.container:nth-child(4)::before, .container:nth-child(7)::before {
+.container:nth-child(4)::before, .container:nth-child(6)::before, .container:nth-child(8)::before {
   background-color: var(--light-shades);
   color: var(--dark-shades);
 }
-.container:nth-child(4), .container:nth-child(7) {
+.container:nth-child(4), .container:nth-child(6), .container:nth-child(8) {
   padding-top: 20px;
   color: var(--dark-shades);
 }
@@ -275,6 +284,7 @@ nav > img {
   position: relative;
   top: 80vh;
   display: block;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -347,7 +357,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(1) {
-  background-color: rgb(207, 170, 6);
+  background-color: var(--dark-shades);
   background-image: url(/images/golden_dutch.png);
   background-position: left top;
   background-size: 200%;
@@ -355,7 +365,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(2){
-  background-color: rgb(182, 12, 12);
+  background-color: var(--dark-shades);
   background-image: url(/images/old_beiler.png);
   background-position: right top;
   background-size: 200%;
@@ -364,7 +374,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(3) {
-  background-color: rgb(82, 165, 14);
+  background-color: var(--dark-shades);
   background-image: url(/images/the_green_beiler.png);
   background-position: right bottom;
   background-size: 200%;
@@ -373,7 +383,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(4) {
-  background-color: rgb(117, 81, 2);
+  background-color: var(--dark-shades);
   background-image: url(/images/the_brown_beiler.png);
   background-position: left bottom;
   background-size: 200%;
@@ -405,7 +415,7 @@ nav > img {
   padding: 4%;
   width: 100%;
   color: var(--dark-shades);
-  background-color: var(--main-brand);
+  background-color: var(--light-shades);
   border-radius: 20px;
   display: block;
 }
@@ -591,23 +601,27 @@ nav > img {
   color: grey;
 }
 
+.teamText {
+  height: 150px;
+}
 
 .teamCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px; 
-  width: 220px; 
-  margin-bottom: 15px;
-  margin-right: 10px;
-  
+  width: 250px; 
+  margin: 10px;
 }
 .teamCard img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .teamContainer {
   padding: 10px;
   text-align: center;
+  height: 380px;
 }
 
 .teamContainer > * {
@@ -615,15 +629,16 @@ nav > img {
   margin-top: 15px;
 }
 
-.teamContainer button {
+.teamContainer .teamButton {
   border: none;
+  display: block;
+  margin-top: 40px;
   padding: 8px;
   color: white;
-  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  background-color: green;
+  background-color: var(--dark-accent);
   text-decoration: none;
 }
 
@@ -677,13 +692,18 @@ nav > img {
 
 /********** FAQ *********/
 
-.faq {
-  margin-top: 50px;
-  margin-bottom: 100px;
+#faq {
+  margin-bottom: 300px;
+  padding-top: 6vh;
+}
+
+#faq h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .faqQuestion{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .faqCollapse {
@@ -711,6 +731,20 @@ border-style: none;
 
 .faqContent p {
   margin-left: 15px;
+}
+
+@media screen and (max-width:650px){
+  .faqCollapse{
+    width:100%;
+    
+  }
+}
+
+@media screen and (max-width:650px){
+  .faqContent{
+    width:100%;
+    
+  }
 }
 
 /********** ROOT ********/
@@ -824,6 +858,21 @@ footer {
 
 #newsletter {
   display: block;
+  margin: 7px;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+  box-shadow: none;
+}
+
+#newsletter:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+  cursor: pointer;
 }
 
 .background {
@@ -834,9 +883,74 @@ footer {
   display: block;
 }
 
+/* Best sellers */
+
+.flip-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  margin-bottom: 50px;
+  height: 330px;
+  perspective: 1000px;
+  padding: 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 6px 0 var(--light-shades);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: var(--light-shades);
+  color: var(--light-shades);
+}
+
+.flip-card-back {
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+  transform: rotateY(180deg);
+  padding: 15px;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+}
+
 .text-center {
   text-align: center;
   padding: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .flip-cards {
+    padding: 0px;
+  }
 }
 
 #copy {
@@ -999,4 +1113,80 @@ form > input[type="submit"]:hover {
   background-color: var(--light-accent);
   color: var(--dark-shades);
   cursor: pointer;
+}
+
+.card {
+  float: left;
+  margin: 10px;
+  position: relative; 
+  box-shadow: 0 4px 8px 0 black;
+  max-width: 345px;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+}
+
+.card h1 {
+  height: 60px;
+}
+
+.card select {
+  width: 80%;
+}
+
+#howItsMade h1 {
+  padding-top: 40px;
+}
+
+
+.title {
+height: 175px;
+text-align: left;
+
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.price {
+  color: var(--dark-shades);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--light-shades);
+  background-color: var(--dark-accent);
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.card button:hover {
+  background-color: var(--light-accent);
+}
+
+.card button:active {
+  background-color: var(--main-brand);
+  box-shadow: var(--light-accent);
+}
+
+#catalog-header {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+#catalog-cards{
+  overflow: hidden;
+  padding-bottom: 100px;
 }

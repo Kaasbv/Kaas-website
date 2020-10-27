@@ -664,7 +664,6 @@ nav > img {
     display: flex;
     flex-wrap:wrap;
     overflow: hidden;
-
   }
 }
 
@@ -859,12 +858,13 @@ footer {
 
 .flip-card {
   background-color: transparent;
-  width: 250px;
+  width: 300px;
   margin-bottom: 50px;
   height: 400px;
   perspective: 1000px;
   display: flex;
   padding: 5px;
+  min-width: 300px;
 }
 
 .flip-card-inner {

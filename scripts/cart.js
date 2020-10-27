@@ -43,7 +43,7 @@ const products = [
   {
     name: "The Brown Beiler",
     description: "The Brown Beiler: A nutty cheese.",
-    desciptionPoints: ["8 months old", "Soft", "Creamy"],
+    desciptionPoints: ["4 months old", "Soft", "Creamy"],
     variants: [
       {name: "1 kg", price: 35, kilo: 1},
       {name: "3 kg", price: 85, kilo: 3},
@@ -71,10 +71,10 @@ const products = [
     description: "The Red Beiler: a semi-muture cheese",
     desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 40, kilo: 1},
+      {name: "3 kg", price: 100, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 325, kilo: 12},
     ],
     
     image: "images/products/theredbeiler.png"
@@ -84,10 +84,10 @@ const products = [
     description: "The Oaker Beiler: a Cheese smoked with oak-wood",
     desciptionPoints: [],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 35, kilo: 1},
+      {name: "3 kg", price: 85, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 300, kilo: 12},
     ],
     
     image: "images/products/theoakerbeiler.png"
@@ -97,10 +97,10 @@ const products = [
     description: "The Beiler Duchess: a honey cheese with special selected herbs",
     desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 45, kilo: 1},
+      {name: "3 kg", price: 115, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 210, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 375, kilo: 12},
     ],
     
     image: "images/products/thebeilerduchess.png"
@@ -110,10 +110,10 @@ const products = [
     description: "Young Beiler: Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
     ],
     
     image: "images/products/youngbeiler.png"
@@ -123,10 +123,10 @@ const products = [
     description: "Young Beiler (lean): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
     ],
     
     image: "images/products/youngbeilerlean.png"
@@ -136,13 +136,13 @@ const products = [
     description: "Young Beiler (less salt): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
     variants: [
-      {name: "1 kg", price: 50, kilo: 1},
-      {name: "3 kg", price: 125, kilo: 3},
-      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
-      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
+      {name: "1 kg", price: 25, kilo: 1},
+      {name: "3 kg", price: 60, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 110, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 200, kilo: 12},
     ],
     
-    image: "images/products/youngbeiler.png"
+    image: "images/products/youngbeilerlsalt.png"
   },
 ];
 

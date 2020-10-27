@@ -22,6 +22,10 @@ function initMenu(){
   let button = document.querySelector("#menu-icon");
   let menu =  document.querySelector("#menu-links");
 
+  menu.addEventListener("click", function(){
+    menu.style.display = "none";
+  });
+
   button.addEventListener("click", function (){
     if(menu.style.display === "none" || !menu.style.display){
       menu.style.display = "block";

@@ -1079,7 +1079,7 @@ form > input[type="submit"]:hover {
   margin: 10px;
   position: relative; 
   box-shadow: 0 4px 8px 0 black;
-  max-width: 300px;
+  max-width: 345px;
   text-align: center;
   padding: 20px;
   font-family: Arial;
@@ -1133,4 +1133,15 @@ text-align: left;
 .card button:active {
   background-color: var(--main-brand);
   box-shadow: var(--light-accent);
+}
+
+#catalog-header {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+#catalog-cards{
+  overflow: hidden;
+  padding-bottom: 100px;
 }

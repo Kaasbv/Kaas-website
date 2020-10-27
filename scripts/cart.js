@@ -25,124 +25,124 @@ const products = [
       {name: "½ wheel - ± 6 kg", price: 150, kilo: 6},
       {name: "whole wheel - ± 12 kg", price: 275, kilo: 12},
     ],
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/goldendutch.png"
   },
   {
     name: "Old Beiler",
     description: "Old Beiler: a cheese for special evenings.",
     desciptionPoints: ["16 months old", "Hard", "Strong-bodied", "Complex"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 60, kilo: 1},
+      {name: "3 kg", price: 150, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 275, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 475, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/oldbeiler.png"
   },
   {
     name: "The Brown Beiler",
     description: "The Brown Beiler: A nutty cheese.",
     desciptionPoints: ["8 months old", "Soft", "Creamy"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 35, kilo: 1},
+      {name: "3 kg", price: 85, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 175, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 300, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/thebrownbeiler.png"
   },
   {
     name: "The Green Beiler",
     description: "The Green Beiler: An old Cheese with rich tones of basil",
     desciptionPoints: ["12 months old", "Hard", "Salty with fresh tones", "Balanced"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/thegreenbeiler.png"
   },
   {
     name: "The Red Beiler",
     description: "The Red Beiler: a semi-muture cheese",
     desciptionPoints: ["10 weeks old", "Smooth"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/theredbeiler.png"
   },
   {
     name: "The Oaker Beiler",
     description: "The Oaker Beiler: a Cheese smoked with oak-wood",
     desciptionPoints: [],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/theoakerbeiler.png"
   },
   {
     name: "The Beiler Duchess",
     description: "The Beiler Duchess: a honey cheese with special selected herbs",
     desciptionPoints: ["6 months old", "Smooth", "Sweet", "Complex", "Herbs: truffle, garlic, oregano"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/thebeilerduchess.png"
   },
   {
     name: "Young Beiler",
     description: "Young Beiler: Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/youngbeiler.png"
   },
   {
     name: "Young Beiler (lean)",
     description: "Young Beiler (lean): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "Just 5% fat"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/youngbeilerlean.png"
   },
   {
     name: "Young Beiler (less salt)",
     description: "Young Beiler (less salt): Young cheese",
     desciptionPoints: ["4 weeks old", "Soft", "Light", "Grassy", "70% less salt"],
     variants: [
-      {name: "1 kg", price: 30, kilo: 1},
-      {name: "3 kilo", price: 80, kilo: 3},
-      {name: "Halve wiel - avg. 6 kilo", price: 150, kilo: 6},
-      {name: "Heel wiel - avg. 12 kilo", price: 275, kilo: 12},
+      {name: "1 kg", price: 50, kilo: 1},
+      {name: "3 kg", price: 125, kilo: 3},
+      {name: "½ wheel - ± 6 kg", price: 215, kilo: 6},
+      {name: "whole wheel - ± 12 kg", price: 400, kilo: 12},
     ],
     
-    image: "https://www.goudsekaasshop.nl/pub/media/catalog/product/cache/f3d6ffe6cc7567d4a366673e5a9a98a5/g/o/gouda-holland-kaas-kaese-cheese-jong-belegen-young-matured-jung-gereift2.jpg"
+    image: "images/products/youngbeiler.png"
   },
 ];
 

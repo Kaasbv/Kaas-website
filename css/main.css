@@ -1108,6 +1108,10 @@ form > input[type="submit"]:hover {
   width: 80%;
 }
 
+#howItsMade h1 {
+  padding-top: 40px;
+}
+
 
 .title {
 height: 175px;

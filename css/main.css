@@ -593,6 +593,9 @@ nav > img {
   color: grey;
 }
 
+.teamText {
+  height: 150px;
+}
 
 .teamCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
@@ -610,6 +613,7 @@ nav > img {
 .teamContainer {
   padding: 10px;
   text-align: center;
+  height: 380px;
 }
 
 .teamContainer > * {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Cardo', sans-serif;
   padding: 0;
   background: var(--dark-shades);
   color: var(--light-shades);
@@ -110,14 +113,18 @@ nav > ul {
   position: relative;
   height: 6vh;
   float: right;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+#menu-icons img {
+  height: 6vh;
+  width: 6vh;
+  padding: 1vh;
 }
 
 #menu-icons > * {
   position: relative;
   float: left;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 nav > img {
@@ -262,6 +269,7 @@ nav > img {
   position: relative;
   top: 80vh;
   display: block;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -328,7 +336,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(1) {
-  background-color: rgb(207, 170, 6);
+  background-color: var(--dark-shades);
   background-image: url(/images/golden_dutch.png);
   background-position: left top;
   background-size: 200%;
@@ -336,7 +344,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(2){
-  background-color: rgb(182, 12, 12);
+  background-color: var(--dark-shades);
   background-image: url(/images/old_beiler.png);
   background-position: right top;
   background-size: 200%;
@@ -345,7 +353,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(3) {
-  background-color: rgb(82, 165, 14);
+  background-color: var(--dark-shades);
   background-image: url(/images/the_green_beiler.png);
   background-position: right bottom;
   background-size: 200%;
@@ -354,7 +362,7 @@ nav > img {
 }
 
 .our_cheese--cheese--part:nth-child(4) {
-  background-color: rgb(117, 81, 2);
+  background-color: var(--dark-shades);
   background-image: url(/images/the_brown_beiler.png);
   background-position: left bottom;
   background-size: 200%;
@@ -386,7 +394,7 @@ nav > img {
   padding: 4%;
   width: 100%;
   color: var(--dark-shades);
-  background-color: var(--main-brand);
+  background-color: var(--light-shades);
   border-radius: 20px;
   display: block;
 }
@@ -591,11 +599,12 @@ nav > img {
   text-align: center;
   padding: 10px; 
   width: 250px; 
-  margin: 10px  
-  
+  margin: 10px;
 }
 .teamCard img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .teamContainer {
@@ -877,9 +886,8 @@ footer {
   background-color: transparent;
   width: 250px;
   margin-bottom: 50px;
-  height: 400px;
+  height: 330px;
   perspective: 1000px;
-  display: flex;
   padding: 5px;
 }
 
@@ -925,6 +933,12 @@ footer {
 .text-center {
   text-align: center;
   padding: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .flip-cards {
+    padding: 0px;
+  }
 }
 
 #copy {
@@ -1087,4 +1101,76 @@ form > input[type="submit"]:hover {
   background-color: var(--light-accent);
   color: var(--dark-shades);
   cursor: pointer;
+}
+
+.card {
+  float: left;
+  margin: 10px;
+  position: relative; 
+  box-shadow: 0 4px 8px 0 black;
+  max-width: 345px;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+  background-color: var(--light-shades);
+  color: var(--dark-shades);
+}
+
+.card h1 {
+  height: 60px;
+}
+
+.card select {
+  width: 80%;
+}
+
+
+.title {
+height: 175px;
+text-align: left;
+
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.price {
+  color: var(--dark-shades);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--light-shades);
+  background-color: var(--dark-accent);
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.card button:hover {
+  background-color: var(--light-accent);
+}
+
+.card button:active {
+  background-color: var(--main-brand);
+  box-shadow: var(--light-accent);
+}
+
+#catalog-header {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+#catalog-cards{
+  overflow: hidden;
+  padding-bottom: 100px;
 }

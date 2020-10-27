@@ -113,14 +113,18 @@ nav > ul {
   position: relative;
   height: 6vh;
   float: right;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+#menu-icons img {
+  height: 6vh;
+  width: 6vh;
+  padding: 1vh;
 }
 
 #menu-icons > * {
   position: relative;
   float: left;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 nav > img {

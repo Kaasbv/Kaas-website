@@ -911,6 +911,12 @@ footer {
   padding: 50px;
 }
 
+@media screen and (max-width: 1100px) {
+  .flip-cards {
+    padding: 0px;
+  }
+}
+
 #copy {
   color: white;
   text-align: center;

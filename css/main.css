@@ -617,15 +617,16 @@ nav > img {
   margin-top: 15px;
 }
 
-.teamContainer button {
+.teamContainer .teamButton {
   border: none;
+  display: block;
+  margin-top: 40px;
   padding: 8px;
   color: white;
-  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  background-color: green;
+  background-color: var(--dark-accent);
   text-decoration: none;
 }
 
@@ -845,6 +846,21 @@ footer {
 
 #newsletter {
   display: block;
+  margin: 7px;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+  box-shadow: none;
+}
+
+#newsletter:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+  cursor: pointer;
 }
 
 .background {

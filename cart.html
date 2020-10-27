@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kaas website</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <title>The Beiler Caseus</title>
+    <meta name="keywords"
+      content="Cheese, Kaas, USA, American, Special, free shipping, delivery, free cheese, luxery cheese, expensive cheese, worlds, best, most, delicous, website">
+    <meta name="description"
+      content="Get the best cheese delivered at your doorstep with cheese from The Beiler Caseus. With free shipping, we deliver the most popular cheese in the US. Right from the green meadows of the Netherlands.">
     <script src="scripts/cart.js"></script>
+    <script src="scripts/main.js"></script>
     <script>
       window.addEventListener("load", renderCart);
     </script>
+  
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <!--LINK FONT HERE-->
+  
+    <link rel="shortcut icon" href="images/favicon1.0.png" type="image/png">
   </head> 
   <body class="single-page">
-    <div class="container">
-      <h1>Cart</h1>
-      <div id="cart-items"></div>
-      <div id="cart-summary">
-        <p>
-          Total: <span id="cart-total"></span><br>
-          Shipping costs: 0$
-        </p>
+    <nav class= "shrinked-menu">
+      <img id="menu-icon" src="/images/icons8-menu-52.png">
+      <img id="menu-logo" src="/images/logo.png" alt="The Beiler Caseus"></a>
+      <ul id="menu-links">
+        <li><a href="/#our_cheese">Our Cheese</a></li>
+        <li><a href="/#howItsMade">How it's made</a></li>
+        <li><a href="/#aboutus">About us</a></li>
+        <li><a href="/#contactUs">Contact</a></li>
+        <li><a href="#">Catalog</a></li>
+      </ul>
+      <div id="menu-icons">
+        <a href="/cart.html"><img id="menu-shopping" src="/images/shoppingcart.png" height="32px" width="32px"></a>
       </div>
-      <button class="button" id="cart-checkout">Check Out</button>
+    </nav>
+
+    <div class="container">
+      <div id="cartPage">
+        <h1>Cart</h1>
+        <div id="cart-items"></div>
+        <div id="cart-summary">
+          <p>
+            Total: <span id="cart-total"></span><br>
+            Shipping costs: 0$
+          </p>
+        </div>
+        <button class="button" id="cart-checkout">Check Out</button>
+      </div>
     </div>
+    
+    <footer>
+      <div id="footer-logo">
+        <a href="./index.html"><img src="/images/logo.png" alt="DeBeilerCheese logo" ></a>
+      </div>
+      <div class="wrapper1">
+        <a href="/#Home">Home</a>
+        <a href="/#our_cheese">Our Cheese</a>
+        <a href="/#howItsMade">How it's Made</a>
+        <a href="/#aboutus">About Us</a>
+        <a href="/cart.html">Shop</a>
+        <a href="/faq.html">FAQ</a>
+      </div>
+      <div class="wrapper2">
+        <div>
+          Contact:
+        </div>
+        <div>
+          Dorpsstraat 16
+        </div>
+        <div>
+          Kaasstad
+        </div>
+        <div>
+          TheBeilerCheese@gmail.com
+        </div>
+      </div>
+      <div class="wrapper3">
+        <div>
+          Newsletter:
+        </div>
+        <input type="email" placeholder="Your email adress" id="emailinput">
+        <button id="newsletter" onclick="mailFunction()">Sign me up please!</button>
+      </div>
+      <div id="copy">©TheBeilerCheese</div>
+    </footer>
   </body>
 </html>

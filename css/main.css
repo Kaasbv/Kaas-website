@@ -215,6 +215,8 @@ nav > img {
   left: calc(((100vw - 1100px) / 2) * -1);
 }
 
+/**************** Home Page ****************/
+
 #Home{
   background-image: url(/images/landing.jpg);
   background-size: cover;
@@ -296,6 +298,7 @@ nav > img {
 #our_cheese {
   overflow: hidden;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 #our_cheese h1 {
@@ -317,7 +320,6 @@ nav > img {
 #our_cheese--cheese {
   position: relative;
   border: 0px;
-  border-radius: 20px;
   margin: 50px;
   height: 400px;
   width: 400px;
@@ -336,6 +338,12 @@ nav > img {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.our_cheese--cheese--part:hover{
+  scale: 110%;
+  border: 1px solid black;
+  z-index: 10;
 }
 
 .our_cheese--cheese--part:nth-child(1) {

@@ -837,6 +837,21 @@ footer {
 
 #newsletter {
   display: block;
+  margin: 7px;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+  box-shadow: none;
+}
+
+#newsletter:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+  cursor: pointer;
 }
 
 .background {

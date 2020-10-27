@@ -1,21 +1,3 @@
-//Scroll menu
-window.addEventListener("scroll", updateMenu)
-
-var schrinked = false;
-
-function updateMenu(){
-  var menu = document.querySelector("nav");
-  var menuHoogte = parseInt(window.getComputedStyle(menu).height);
-  if(window.scrollY + menuHoogte > window.innerHeight && !schrinked){
-    menu.classList.add("shrinked-menu");
-    schrinked = true;
-  }else if(window.scrollY + menuHoogte <= window.innerHeight && schrinked){
-    menu.classList.remove("shrinked-menu");
-    schrinked = false;
-  }
-}
-
-
 window.addEventListener("load", initMenu);
 
 function initMenu(){
@@ -23,7 +5,9 @@ function initMenu(){
   let menu =  document.querySelector("#menu-links");
 
   menu.addEventListener("click", function(){
-    menu.style.display = "none";
+    if(window.innerWidth < 1100){
+      menu.style.display = "none";
+    }
   });
 
   button.addEventListener("click", function (){
@@ -33,31 +17,6 @@ function initMenu(){
       menu.style.display = "none";
     }
   });
-}
-
-window.addEventListener("load", initOurCheese)
-
-function initOurCheese(){
-    const cheeseParts = Array.from(document.querySelectorAll('.our_cheese--cheese--part'));
-    const cheeseSlide = Array.from(document.querySelectorAll('.our_cheese--slide'));
-
-    for(let cheeseIndex in cheeseParts){
-        let cheesePart = cheeseParts[cheeseIndex];
-
-        cheesePart.addEventListener('click', function(){
-            resetOurCheese();
-            cheeseSlide[cheeseIndex].classList.add('current_slide');
-        });
-    }
-}
-
-function resetOurCheese(){
-    const cheeseParts = Array.from(document.querySelectorAll('.our_cheese--cheese--part'));
-    const cheeseSlide = Array.from(document.querySelectorAll('.our_cheese--slide'));
-
-    for(let cheeseIndex in cheeseParts){
-        cheeseSlide[cheeseIndex].classList.remove('current_slide');
-    }
 }
 
 function mailFunction() {

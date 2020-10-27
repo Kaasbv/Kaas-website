@@ -26,6 +26,7 @@
 #cart-items > div > img {
   height: 200px;
   width: 200px;
+  margin-right: 20px;
   object-fit: contain;
 }
 

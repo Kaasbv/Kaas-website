@@ -238,7 +238,7 @@ function renderCatalog(){
         <select name="weight" id="weight">
           ${renderCatalogOptions(product.variants)}
         </select>
-        <button class="catalog-button">Add to card</button>
+        <button class="catalog-button">Add to cart</button>
     </div>` //Voeg een volledige cart html toe aan de html variable
   }
 

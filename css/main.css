@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Cardo', sans-serif;
   padding: 0;
   background: var(--dark-shades);
   color: var(--light-shades);
@@ -591,11 +594,12 @@ nav > img {
   text-align: center;
   padding: 10px; 
   width: 250px; 
-  margin: 10px  
-  
+  margin: 10px;
 }
 .teamCard img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .teamContainer {
@@ -863,7 +867,6 @@ footer {
   margin-bottom: 50px;
   height: 400px;
   perspective: 1000px;
-  display: flex;
   padding: 5px;
 }
 
